@@ -1,0 +1,125 @@
+* {
+	box-sizing: border-box;
+}
+
+img {
+	width: 100%;
+}
+
+/* Basis styles */
+
+html {
+	color: #222;
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+body {
+	margin: 0 auto;
+}
+
+.content {
+	max-width: 80em;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	padding: 1.5em;
+}
+
+.theme_green {
+	background-color: #a2c037;
+}
+
+.row_icon img {
+	max-width: 3em;
+	margin-right: 10em;
+}
+
+header {}
+
+/*---- fonts ------*/
+
+@font-face {
+	font-family: 'neogreyregular';
+	src: url('fonts/neogray/neogreyregular-webfont.woff2') format('woff2'),
+	url('fonts/neogray/neogreyregular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+header h1 {
+	font-family: 'neogreyregular', sans-serif;
+	color: #fff;
+	font-size: 4.5em;
+	font-weight: lighter;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	margin: 0;
+}
+
+header h2 {
+	font-family: 'Open sans', sans-serif;
+	color: #fff;
+	font-size: 1.25em;
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	margin: 0;
+	padding: 0 0 3em;
+}
+
+nav ul {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+
+}
+
+nav li {
+	font-family: 'Open sans', sans-serif;
+	flex-wrap: nowrap;
+	margin: 0 2em 0 0;
+	font-size: 1em;
+	font-weight: normal;
+	text-transform: uppercase;
+	padding: 0;
+}
+
+nav li.nav_home {
+	background: url('images/nav_home.svg') no-repeat left top;
+	padding-left: 1.75em;
+}
+
+nav li.nav_cv {
+	background: url('images/nav_cv.svg') no-repeat left top;
+	padding-left: 1.75em;
+}
+
+nav li.nav_portfolio {
+	background: url('images/nav_portfolio.svg') no-repeat left top;
+	padding-left: 1.75em;
+}
+
+nav a {
+	text-decoration: none;
+	color: #000;
+}
+
+nav li.nav_home:hover {
+	color: #a2c037;
+	background: url('images/nav_home_hover.svg') no-repeat left top;
+	padding-left: 1.75em;
+}
+
+nav li.nav_cv:hover {
+	color: #a2c037;
+	background: url('images/nav_cv_hover.svg') no-repeat left top;
+	padding-left: 1.75em;
+}
+
+nav li.nav_portfolio:hover {
+	color: #a2c037;
+	background: url('images/nav_portfolio_hover.svg') no-repeat left top;
+	padding-left: 1.75em;
+}
