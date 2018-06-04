@@ -3,7 +3,8 @@
 }
 
 img {
-	width: 100%;
+	max-width: 100%;
+	height: auto;
 }
 
 /* Basis styles */
@@ -58,11 +59,46 @@ h4 {
 	font-size: 1em;
 }
 
+a {
+	text-decoration: none;
+	color: #222;
+	font-weight: bold;
+}
+
+a:link {
+	text-decoration: none;
+	color: #222;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #a2c037;
+	transition: 0.5s;
+}
+
+a:active {
+	color: #222;
+	transition: 0.5s;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #222;
+
+}
+
 .wrapper {
 	position: relative;
 	width: 100%;
 	margin: 0 auto;
 	padding: 2em 2em 2em 2em;
+}
+
+.banner_wrapper {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0em 2em 0em 2em;
 }
 
 .theme_green {
@@ -188,7 +224,7 @@ main .pagetitle {
 }
 
 main .subtitle {
-	margin-top: 0;
+	margin: 0;
 }
 
 main ul {
@@ -196,10 +232,32 @@ main ul {
 	padding-left: 1.5em;
 }
 
+main .banner {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 64em;
+}
+
+main .banner_1 {
+	background-color: #adcfd9;
+}
+
+main .opgave {
+	margin: 0;
+	font-weight: bold;
+}
+
 .row {
 	margin-left: calc(-50vw + 50%);
 	margin-right: calc(-50vw + 50%);
 	padding: 0 0 1em;
+}
+
+.banner_row {
+	margin-left: calc(-50vw + 50%);
+	margin-right: calc(-50vw + 50%);
+	padding: 0 0 0em;
 }
 
 .column_wrapper {
@@ -210,7 +268,7 @@ main ul {
 
 .column {
 	flex-grow: 1;
-	flex-basis: 15em;
+	flex-basis: 14em;
 	padding: 0 2em 2em 0;
 }
 
@@ -225,7 +283,6 @@ main ul {
 	flex-basis: 15em;
 	padding: 0 2em 2em 0;
 }
-
 
 footer {
 	font-family: "open sans";
@@ -267,6 +324,10 @@ footer p {
 		padding: 1em 1em 1em 1.4em;
 	}
 
+	.banner_wrapper {
+		padding: 0em 2em 0em 2em;
+	}
+
 	header {
 		padding: 0 0 2em;
 	}
@@ -296,7 +357,11 @@ footer p {
 
 	.wrapper {
 		width: 48em;
-		padding: 1em 7em 1em 7em;
+		padding: 1em 0 1em 7em;
+	}
+
+	.banner_wrapper {
+		padding: 0em 2em 0em 2em;
 	}
 
 	header {
@@ -349,7 +414,11 @@ footer p {
 
 	.wrapper {
 		width: 64em;
-		padding: 1em 10em 1em 10em;
+		padding: 1em 0 1em 10em;
+	}
+
+	.banner_wrapper {
+		padding: 0em 2em 0em 2em;
 	}
 
 	header h1 {
@@ -373,7 +442,11 @@ footer p {
 
 	.wrapper {
 		width: 80em;
-		padding: 1em 10em 1em 10em;
+		padding: 1em 0 1em 10em;
+	}
+
+	.banner_wrapper {
+		padding: 0em 2em 0em 2em;
 	}
 
 	header h1 {
