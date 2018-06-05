@@ -13,29 +13,67 @@
 <body>
 	<div class="theme_green">
 		<header class="wrapper theme_green">
-			<img src="images/icon_site.svg" class="row_icon" alt="site-navnigation ikon">
 			<h1>Portfolio</h1>
 			<h2><span class="nobreak">erik granberg</span> / <span class="nobreak">MMD-F2018</span> / <span class="nobreak">1-semester</span></h2>
 		</header>
 	</div>
 
 	<nav class="wrapper">
-		<img src="images/icon_nav.svg" class="row_icon" alt="site-navnigation ikon">
 		<ul>
 			<li class="nav_home"><a href="index.html">Forside</a></li>
 			<li class="nav_portfolio"><a href="portfolio.html">portfolio</a></li>
 			<li class="nav_cv"><a href="cv.html">cv</a></li>
+			<li class="nav_back"><a href="#" onclick="window.history.go(-1)">Tilbage</a></li>
 
 		</ul>
 	</nav>
 
-	<main class="theme_gray rowcolors">
-		<div class="row">
+	<main>
+		<div class="row theme_gray">
 			<section class="wrapper">
-				<h2>Portfolio</h2>
-				<p>Her kommer portfoliet</p>
+				<h2 class="pagetitle">Portfolio</h2>
+				<h4 class="subtitle">Emner opdelt efter temaområde.</h4>
 			</section>
 		</div>
+
+		<div class="row">
+			<section class="wrapper">
+				<h2>HTML - Tema 1</h2>
+				<div class="column_wrapper">
+
+					<div class="column">
+						<a href="portfolio_html_responsive3.html">
+						<img src="images/portfolio_responsive_v3.png" alt="Stilartsite">
+						<h4 class="opgave">Responisve Site v3</h4></a>
+						<p>Stilartsite, opgave 01.04.04. + tilhørende procesopgaver med design, Illustator, photoshop, m.m.</p>
+					</div>
+				</div>
+
+			</section>
+		</div>
+
+		<div class="row theme_gray">
+			<section class="wrapper">
+				<h2>Video - Tema 3</h2>
+				<div class="column_wrapper">
+
+					<div class="column">
+						<a href="portfolio_video_cbhdox.html">
+						<img src="images/portfolio_cph_dox.png" alt="KBH DOXS">
+						<h4 class="opgave">KBH-DOX</h4></a>
+						<p>Video, opgaven Everydayproject.</p>
+					</div>
+					<div class="column">
+						<a href="portfolio_video_redesign.html">
+						<img src="images/portfolio_redesign.png" alt="Redesign">
+						<h4 class="opgave">Redesign + virksomhedsvideo</h4></a>
+						<p>Video, opgaven 03.02.01. Ziggis Kaffebar </p>
+					</div>
+				</div>
+
+			</section>
+		</div>
+
 	</main>
 
 	<div class="theme_green">
