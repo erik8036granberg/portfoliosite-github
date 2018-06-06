@@ -276,6 +276,10 @@ main .banner_4 {
 	background-color: #c4d09b;
 }
 
+main .banner_5 {
+	background-color: #898889;
+}
+
 main .opgave {
 	margin: 0;
 	font-weight: bold;
@@ -292,6 +296,14 @@ main a img:hover {
 main .lyde {
 	padding: 0.5em;
 	margin: 0;
+}
+
+main .lydinfo {
+	line-height: 0;
+	padding: 0;
+	margin: 0 0 1em 2em;
+	vertical-align: text-top;
+	display: block;
 }
 
 main .lydinfo {
@@ -355,12 +367,17 @@ footer p {
 	margin: 2.5em 0 2.5em;
 }
 
+.video_wrapper {
+	max-width: 35em;
+}
+
 .hs-responsive-download-video {
 	margin: 20px;
+	margin-left: 0;
 	position: relative;
 	width: 100%;
 	height: 100%;
-	padding-top: 25px;
+	/*	padding-top: 25px;*/
 	padding-bottom: 56.25%;
 	margin-bottom: 20px;
 	background-color: #000;
