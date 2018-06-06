@@ -501,6 +501,10 @@ footer p {
 		max-width: 15em;
 	}
 
+	main .topspace {
+		margin-top: 0.5em;
+	}
+
 	.column {
 		flex-grow: 1;
 		flex-basis: 20em;
@@ -555,6 +559,10 @@ footer p {
 	.column {
 		max-width: 50%;
 	}
+
+	main .lydinfo {
+		display: inline-block;
+	}
 }
 
 
@@ -587,5 +595,9 @@ footer p {
 
 	.column {
 		max-width: 50%;
+	}
+
+	main .lydinfo {
+		display: inline-block;
 	}
 }

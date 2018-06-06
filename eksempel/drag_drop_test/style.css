@@ -1,0 +1,149 @@
+#kanin_container {
+	position: absolute;
+	width: 26.04vw;
+	height: 28.64vw;
+}
+
+/* kanin sprite */
+
+#kanin_sprite {
+	width: 26.04vw;
+	height: 28.64vw;
+	background-image: url(images/kaninspritesheet.svg);
+	background-size: 1200% 800%;
+}
+
+/*kanin_spil_position (container) */
+
+.kanin_spil_possition {
+	top: 11.5vw;
+	left: 21vw;
+	z-index: 25;
+}
+
+/*kanin_spil_Størrelse (sprite) */
+
+.kanin_spil_size {
+	transform: scale(0.72);
+}
+
+#kanin_drop {
+	position: absolute;
+	top: 5vw;
+	left: 8.5vw;
+	width: 9vw;
+	height: 23vw;
+	background-color: red;
+	opacity: 0.5;
+}
+
+.gulerod_wrapper_1 {
+	position: absolute;
+	top: 200px;
+	left: 200px;
+	width: 150px;
+	height: 250px;
+	overflow: hidden;
+}
+
+.gulerod_wrapper_2 {
+	position: absolute;
+	top: 200px;
+	left: 400px;
+	width: 150px;
+	height: 250px;
+	overflow: hidden;
+}
+
+.gulerod_wrapper_3 {
+	position: absolute;
+	top: 200px;
+	left: 600px;
+	width: 150px;
+	height: 250px;
+	overflow: hidden;
+}
+
+.gulerod {
+	position: absolute;
+	top: 133px;
+	left: 0;
+	width: 150px;
+	height: 250px;
+	z-index: 10;
+}
+
+.gulerod_puls {
+	animation-name: gulerod_puls_kf;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes gulerod_puls_kf {
+	0% {
+		transform: scale(1);
+
+	}
+	50% {
+		transform: scale(1.2);
+
+	}
+	100% {
+		transform: scale(1);
+
+	}
+}
+
+.gulerod_jord {
+	position: absolute;
+	bottom: -20px;
+	width: 150px;
+
+	z-index: 40;
+	pointer-events: none;
+}
+
+
+
+#timer_wrapper {
+	position: absolute;
+	top: 2vw;
+	left: 10vw;
+	width: 80vw;
+	height: 3vw;
+	background-color: #000;
+	border-color: #000;
+	border-style: solid;
+	border-width: 2px;
+}
+
+#timer_bar {
+	position: absolute;
+	top: 0vw;
+	left: 0vw;
+	width: 100%;
+	height: 100%;
+	background-color: #ff6700;
+}
+
+.timer_gaa_ned {
+	animation-name: timer_gaa_ned_kf;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+}
+
+@keyframes timer_gaa_ned_kf {
+	0% {
+		width: 100%;
+	}
+	100% {
+		width: 0%;
+	}
+}
+
+
+.timer_gaa_ned_paused {
+	animation-play-state: paused;
+}

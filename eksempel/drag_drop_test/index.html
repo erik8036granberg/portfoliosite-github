@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<div id="kanin_container">
+		<div id="kanin_sprite">
+			<div id="kanin_drop" ondrop="drop(event, this)" ondragover="allowDrop(event)"></div>
+		</div>
+	</div>
+	<br/>
+	<div class="gulerod_wrapper_1">
+		<img src="images/jord.svg" class="gulerod_jord">
+		<img id="drag1" class="gulerod" src="images/gulerod.svg" draggable="true" ondragstart="drag(event)">
+	</div>
+	<div class="gulerod_wrapper_2">
+		<img src="images/jord.svg" class="gulerod_jord">
+		<img id="drag2" class="gulerod" src="images/gulerod.svg" draggable="true" ondragstart="drag(event)">
+	</div>
+	<div class="gulerod_wrapper_3">
+		<img src="images/jord.svg" class="gulerod_jord">
+		<img id="drag3" class="gulerod" src="images/gulerod.svg" draggable="true" ondragstart="drag(event)">
+	</div>
+	<div id="timer_wrapper">
+		<div id="timer_bar"></div>
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="script.js"></script>
+
+</body>
+
+</html>
