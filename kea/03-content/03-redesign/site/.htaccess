@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Password Protected Area"
+AuthUserFile /customers/d/1/1/erik-crg.dk/httpd.www/kea/03-content/03-redesign/site/.htpasswd
+Require valid-user

@@ -1,0 +1,42 @@
+.hs-responsive-embed-youtube iframe {
+    position: absolute;
+    width: 100%!important;
+    height: 100%!important;
+}
+
+.hs-responsive-embed-youtube {
+    margin: 20px;
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 Aspect Ratio */
+    padding-top: 25px;
+}
+
+/*
+.hs-responsive-download-video iframe {
+    position: absolute;
+    width: 100%!important;
+    height: 100%!important;*/
+
+.hs-responsive-download-video {
+    margin: 20px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 25px;
+    padding-bottom: 56.25%;
+}
+
+
+
+.hs-responsive-download-video video {
+    position: absolute;
+    width: 100%!important;
+    height: 100%!important;
+
+}
+
+.storyboard img {
+    width: 100%;
+
+}

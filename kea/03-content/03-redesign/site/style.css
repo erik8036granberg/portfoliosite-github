@@ -1,0 +1,358 @@
+/* generelt */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2rem;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+h1 {
+
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	font-size: 2rem;
+	margin-top: 0;
+}
+
+
+h2 {
+
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	font-size: 1.5em;
+
+}
+
+h3 {
+
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+}
+
+h4 {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	font-size: 1rem;
+}
+
+p {
+	line-height: 1.5rem;
+}
+
+img {
+	width: 100%;
+}
+
+picture {
+	width: 100%;
+	height: auto;
+}
+
+section {
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 3rem 3rem 4rem;
+}
+
+.column {
+	padding-bottom: 1rem;
+}
+
+.pil {
+	padding: 0 0 2rem;
+	text-align: center;
+}
+
+.pil img {
+	max-width: 2rem;
+}
+
+.pil img:hover {
+	opacity: 0.25;
+	transition: opacity 0.5s ease;
+}
+
+/* header */
+
+.forside {
+	background-color: #202020;
+}
+
+.headerbox {
+	position: absolute;
+	width: 100%;
+}
+
+header {
+	top: 0;
+	left: 0;
+	z-index: 100;
+	display: flex;
+	padding: 1.5rem 3rem 1.5rem;
+}
+
+header h1 {
+	font-family: 'Patua One', cursive;
+	line-height: 2rem;
+	margin: 0;
+	padding: 0 0 1rem;
+}
+
+header picture {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+/* nav */
+
+nav {
+	white-space: nowrap;
+}
+
+nav a {
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	Color: #000;
+	text-decoration: none;
+	margin-left: 1rem;
+}
+
+nav a:first-child {
+	margin-left: 0;
+}
+
+nav a:hover {
+	opacity: 0.25;
+	transition: opacity 0.5s ease;
+}
+
+
+
+/* om */
+
+.omwrapper {
+	background-color: #202020;
+	color: #fff;
+}
+
+#om .sectionwrapper {
+	flex-wrap: wrap;
+	display: flex;
+	flex-direction: row;
+}
+
+#om .column {
+	flex-grow: 1;
+	flex-basis: 250px;
+}
+
+#om .images img {
+	padding: 0 0 1.5rem;
+}
+
+.hs-responsive-embed-youtube iframe {
+	position: absolute;
+	width: 100%!important;
+	height: 100%!important;
+}
+
+.hs-responsive-embed-youtube {
+	position: relative;
+	padding-bottom: 56.25%;
+	/* 16:9 Aspect Ratio */
+	padding-top: 25px;
+}
+
+
+/* menu */
+
+.menuwrapper {
+	background-image: url(images/menu-baggrund.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: #e4bb9f;
+}
+
+#menu .sectionwrapper {
+	flex-wrap: wrap;
+	display: flex;
+	flex-direction: row;
+}
+
+#menu .column {
+	flex-grow: 1;
+	flex-basis: 222px;
+}
+
+#menu .pris {
+	font-size: 1rem;
+	font-style: italic;
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+}
+
+#menu ul {
+	padding: 0;
+}
+
+
+#menu li {
+	list-style-type: none;
+	text-align: center;
+}
+
+#menu h1 {
+	text-align: center;
+}
+
+#menu h3 {
+	text-align: center;
+}
+
+
+/* kontakt */
+
+#kontakt {
+	color: #fff;
+}
+
+#kontakt .sectionwrapper {
+	display: flex;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	justify-content: space-between;
+}
+
+.kontaktwrapper {
+	background-color: #503126;
+}
+
+
+#kontakt .column {
+	flex-grow: 1;
+	flex-basis: 300px;
+}
+
+#kontakt .some img {
+	width: 2.2rem;
+	margin-right: 0.75rem;
+}
+
+#kontakt .some .symbol {
+	display: flex;
+	align-items: center;
+	padding-bottom: 1.5rem;
+}
+
+#kontakt .some .symbol a {
+	display: flex;
+	align-items: center;
+	color: #fff;
+	text-decoration: none;
+}
+
+#kontakt .some .symbol a:hover {
+	opacity: 0.25;
+	transition: opacity 0.5s ease;
+}
+
+#kontakt iframe {
+	width: 100%;
+	max-width: 350px;
+	margin-top: 2rem;
+}
+
+
+/* footer */
+
+footer {
+	text-align: center;
+	font-size: 0.7rem;
+	font-style: italic;
+	color: #fff;
+	padding: 3rem 3rem 4.5rem;
+	height: 5rem;
+	background-color: #202020;
+}
+
+footer .devide {
+	padding: 0 0.5rem 0;
+}
+
+
+
+/*media quaries*/
+
+@media only screen and (min-width: 613px) {
+
+	section {
+		width: auto;
+		font-size: 0.9rem;
+	}
+
+	#om .images img {
+		padding: 1.25rem 0 0 3rem;
+	}
+
+
+	p {
+		line-height: 1.2rem;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+	section {
+		width: auto;
+		font-size: 0.8rem;
+	}
+
+	#om .images img {
+		padding: 1.25rem 0 0 4rem;
+	}
+}
+
+
+@media only screen and (min-width: 631px) and (orientation: landscape) {
+
+	header {
+		flex-direction: row-reverse;
+	}
+}
+
+@media only screen and (min-width: 775px) and (orientation: portrait) {
+
+	header {
+		flex-direction: row-reverse;
+	}
+}
+
+
+@media only screen and (min-width: 1025px) {
+
+	header {
+		flex-direction: row-reverse;
+	}
+
+	section {
+		width: 1024px;
+		font-size: 0.8rem;
+	}
+	#om .images img {
+		padding: 1.25rem 0 0 5rem;
+	}
+}
