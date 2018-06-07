@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="noindex">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Dette er mit stilartsite om flat design. Her kan du læse om stilarten, se eksempler på grafik med flad design, m.m.">
+	<title>Stilartsite om flat design - final version</title>
+	<link rel="stylesheet" href="stilart.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+</head>
+
+<body>
+	<header class="nav-down">
+		<nav>
+			<div class="dropdown">
+				<div class="menu_symbol"><img class="slide" src="images/menu_symbol.svg" alt="Menu"></div>
+				<div class="dropdown-content">
+					<ul>
+						<li class="link"><a href="#splash">Forside</a></li>
+						<li class="link"><a href="#om">Om</a></li>
+						<li class="link"><a href="#eksempler">Eksempler</a></li>
+						<li class="link"><a href="#typografi">Typografi</a></li>
+						<li class="link"><a href="#komposition_farver">Komposition og farver</a></li>
+						<li class="link"><a href="#links">Links</a></li>
+						<li class="link"><a href="#ekstra">Ekstra</a></li>
+						<li class="link"><a href="styletile.html#styletile">Styletile</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- splash start -->
+	<section id="splash">
+		<h1>Splash</h1>
+		<!--
+	Ikon behøver ikke at være der, da vi ikke har haft om positionering.
+	<div class="ikon"><img src="images/ikon.svg" alt="Menu"></div>
+	-->
+		<picture>
+			<source media="(min-width: 1025px)" srcset="images/desktop.png">
+			<source media="(min-width: 628px) and (orientation: landscape)" srcset="images/tablet_landscape.png">
+			<source media="(min-width: 376px)" srcset="images/tablet_portrait.png">
+			<source media="(min-width: 0px) and (orientation: landscape)" srcset="images/mobile_landscape.png">
+			<img src="images/mobile_portrait.png" alt="velkomstbillede med flat design">
+		</picture>
+	</section>
+
+	<!-- om start -->
+	<section id="om" class="section_width">
+		<h1>Flat design ca. 2006 til nu</h1>
+		<div class="sectionwrapper">
+			<div class="column">
+				<p class="manchet">Flat design er karakteriseret ved udpræget brug af 2D-lignende grafik, som giver et simpelt, stilrent og funktionelt udtryk. Den minimalistiske tilgang passer godt til nutidens trends indenfor webdesign, hvor en navigation eller et app-ikon helst skal kunne gennemskues på få sekunder. Især virksomheder er hoppet med på vognen, da designet giver fornemmelsen af et professionelt site, med fokus på brugeroplevelsen.</p>
+				<h2>Vejen dertil</h2>
+				<p>Historisk set har flat design udgangspunkt i fx swiss style/International typographic style fra 1955-1975 og minimalisme i 1960’erne. Der er fokus på budskabet, og alt overflødigt er som hovedregel skåret bort. Dette giver rigtig god mening i forhold til design af grænseflader og responsivt design på nettet, som også skal fungere på mindre enheder. Både Apple og Windows satte med deres interfacedesign for alvor sat skub i designretningen i løbet af 00’erne og start 10’erne - fx med Windows 8 og iOS 7.</p>
+				<h2>Pendulet svinger</h2>
+				<p>Stilarten gjorde i starten op med det næsten overdrevet detaljerede grafiske udtryk, som var fremherskende på det tidspunkt: Avancerede skygger, teksturer, reflektioner, m.m. - på grænsen til det fotorealistiske. Modreaktionen var her en tilbagevenden til den klassiske stil og æstetik, med fokus på rene linjer, geometriske former og simple virkemidler.</p>
+				<h2>Hvad er det bedst til?</h2>
+				<p>Flat design fungerer i særdeleshed godt til navigation, hvor enkle ikoner giver hurtigt overblik, og kontrastrige farver kan bruges til at adskille forskelligt indhold - evt. også i tilhørende sektioner på selve siden. Illustrationer kan med stilarten få et “feel” som infografik. Det kan både være i seriøs bussiness-stil, eller mere afslappet “hipster”-stil, hvor udtrykket er mere tegneserieagtigt.</p>
+			</div>
+			<div class="column">
+				<div class="image">
+					<figure>
+						<picture>
+							<img src="images/desktop-start-mobile.jpg" alt="Grafik af et skivebord, set forfra i 2D. Et typisk eksempel på grafik tegnet med Flat Design.">
+						</picture>
+						<figcaption>Et typisk eksempel på grafik tegnet med Flat Design.</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- om slut -->
+
+	<!-- eksempler start -->
+	<div class="section_background_eksempler">
+		<section id="eksempler" class="section_width">
+			<h1>Eksempler</h1>
+			<div class="sectionwrapper">
+				<div class="column">
+					<div class="column_content">
+						<div class="top">
+							<h2>Malika Favre (1982 – nu)</h2>
+							<figure>
+								<picture>
+									<source media="(min-width: 501px)" srcset="images/malika_favre_poster_desktop.jpg">
+									<img src="images/malika_favre_poster_mobile.jpg" alt="Plakat af Malika Favre, som viser en kvinde som sidder på en vippe i flat design."></picture>
+								<figcaption>Malika Favre</figcaption>
+							</figure>
+							<h2>Minimalistisk streg</h2>
+							<p>Malika Favre er en kendt fransk grafisk designer, bosiddende i London. Hendes værker er utroligt populære, hovedsageligt på grund af den spektakulære stil, der er karakteriseret ved en slående minimalisme og klare farver. Hendes kunder omfatter bl.a. New Yorker, Vogue, BAFTA, Sephora og Penguin Books.</p>
+							<h2>Effektfulde kontraster</h2>
+							<p>Der er ikke en linje, form eller farve for meget. På trods af denne minimalisme, har billederne en forbløffende skønhed og dybde, især på grund af de skarpe kontraster, som gør billedet meget levende og dynamisk. Der er tydelig inspiration fra Pop Art blandet med Op Art - en abstrakt kunst, der udnytter at menneskets syn let bedrages af optiske fænomener.</p>
+							<h2>Udstillinger</h2>
+							<p>Malika Favre udstillede senest sine værker i Londen, med en billedserie inspireret af den ikoniske parisiske kabaret “Le Crazy Horse”. Storformatsprintene skildrer en sensuel danser, der bevæger sig gennem grafiske mønstre og skarpt neonlys.</p>
+						</div>
+						<div class="bottom">
+							<figure>
+								<picture>
+									<source media="(min-width: 501px)" srcset="images/malika_favre_desktop.jpg">
+									<img src="images/malika_favre_mobile.jpg" alt="Billede af Malika Favre."></picture>
+								<figcaption>Malika Favre</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="column_content">
+						<div class="top">
+							<h2>Jonathan Ive (1967 – nu)</h2>
+							<figure>
+								<picture>
+									<img src="images/ios7_mobile.jpg" alt="Foto af en iPhone, som viser iOS7-ikonerne"></picture>
+								<figcaption>Jonathan Ives iOS7 system</figcaption>
+							</figure>
+							<h2>Gitanterne bliver flade</h2>
+							<p>Både Microsoft og Apple er meget kendte for deres flat design på grænsefladerne. Disse kæmpevirksomheder råder over så mange udviklingsplatforme, at de ikke overraskende havde en afgørende finger med i spillet, da designet blev mainstream.</p>
+							<h2>Orden fra kaos</h2>
+							<p>Jonathan Ive er måske en af de største flat designere. Han er designer hos Apple, hvor han står i spidsen for det Industrielle Designteam, og viderefører Steve jobs designprinciper. Jonathan Ive’s tilgang er kendetegnet ved et ekstremt simpelt og minimalistisk udtryk, og det var især med designet af iOS 7, at han førte Apple yderlige i retning af flat design. Han så muligheden for at designe noget meget enkelt og effektivt. Det handler ikke bare om fraværet af rod og udsmykning. Det handler om at bringe orden i kompleksiteten på en “dyb” og smuk måde.</p>
+							<p>Senest har Jonathan Ive været med til at designe den nye iPhone X.</p>
+						</div>
+						<div class="bottom">
+							<figure>
+								<picture>
+									<img src="images/jonathan_ive_mobile.jpg" alt="Foto af Jonathan Ive"></picture>
+								<figcaption>Jonathan Ive</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="column_content">
+						<div class="top">
+							<h2>Mads Berg (1975 – nu)</h2>
+							<figure>
+								<picture>
+									<source media="(min-width: 501px)" srcset="images/mads_berg_hansen_reklame_desktop.jpg">
+									<img src="images/mads_berg_hansen_reklame_mobile.jpg" alt="Reklameposter med et tropisk motiv."></picture>
+								<figcaption>Reklameposter med et tropisk motiv.</figcaption>
+							</figure>
+							<h2>Made in Denmark</h2>
+							<p>Mads Berg er en dansk grafisk designer, som er mest kendt for sine deco- &amp; vintage-style illustrationer og plakater. Men han har udover logo- og brandingopgaver også arbejdet med værker, som kan falde under kategorien flat design.</p>
+							<h2>Det store udland</h2>
+							<p>Mads har arbejdet som illustrator og designer siden 2001 og har samarbejdet med mange multinationale kunder, eksempelvis Coca Cola, Orangina, San Diego Zoo, Lego, Monocle og Wired.</p>
+							<h2>“Rejseplakater”</h2>
+							<p>I reklameplakaten for Hansen Flødeis bruger han et simpelt, fladt, formsprog, tilført nogle enkle fade-effekter. Personerne som han skildrer, er ofte uden ansigtstræk, og er omgivet af smukke landskaber. Det mere er helheden og stemningen som er målet, i stedet for de individuelle detaljer. Han bruger i disse reklamer udtrykket fra en “gammeldags” udseende rejseannonce/plakater, og viser de eksotiske steder i en ny udgave, så de har en moderne kant.</p>
+						</div>
+						<div class="bottom">
+							<figure>
+								<picture>
+									<source media="(min-width: 501px)" srcset="images/mads_berg_desktop.jpg">
+									<img src="images/mads_berg_mobile.jpg" alt="Foto af Mads Berg"></picture>
+								<figcaption>Mads Berg</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<!-- eksempler slut -->
+
+	<!-- typografi start -->
+	<section id="typografi" class="section_width">
+		<h1>Typografi</h1>
+		<div class="sectionwrapper">
+			<div class="column_wide">
+				<div class="top">
+					<div class="txt">
+						<h2>Less is more</h2>
+						<p>Flat design bruger generelt så lidt tekst som muligt, da billedsproget overvejdende fortæller historien. Når der bruges typografi, er det ofte med en tydelig, grotesk font, så teksten er nemt læselig. Overskrifter står tit med versaler for at være bombastiske. Der bruges meget luft omkring elementerne, så de står rent og klart på en ensfarvet baggrund. Typisk bruges de samme skrifttyper gennemgående, for et sammenhængede udtryk.</p>
+					</div>
+					<div class="image">
+						<figure>
+							<picture>
+								<source media="(min-width: 501px)" srcset="images/landing_page_mobile.jpg">
+								<img src="images/landing_page_mobile.jpg" alt="Et typografieksempel på et website."></picture>
+							<figcaption>Et typografieksempel på et website.</figcaption>
+						</figure>
+					</div>
+				</div>
+				<div class="bottom">
+					<div class="txt">
+						<h2>Ikonet skal sige det hele</h2>
+						<p>På en menuflade med flat design bruges typografi ofte kun supplerende, da ikonet samt evt. en katagori-farve gerne skulle give sig selv. Størrelsen og placeringen af teksten er gentaget ensartet på knapperne, så man ved hvor de står. På apps kan teksten være sparet helt væk.</p>
+					</div>
+					<div class="image">
+						<figure>
+							<picture>
+								<source media="(min-width: 501px)" srcset="images/windows_desktop.jpg">
+								<img src="images/windows_mobile.jpg" alt="Startskærmen fra Windows 8."></picture>
+							<figcaption>Startskærmen fra Windows 8.</figcaption>
+						</figure>
+					</div>
+				</div>
+			</div>
+			<div class="column_narrow">
+				<h2>Plakateksempel</h2>
+				<p>Når en plakat er så enkel som muligt.</p>
+				<figure>
+					<picture>
+						<source media="(min-width: 501px)" srcset="images/whale_desktop.jpg">
+						<img src="images/whale_mobile.jpg" alt="En plakat med en hval der dykker, med meget flad og enkel grafik"></picture>
+					<figcaption>Less is more flat...</figcaption>
+				</figure>
+			</div>
+		</div>
+	</section>
+	<!-- typografi slut -->
+	<div class="divider"></div>
+
+	<!-- komposition_farver start -->
+
+	<section id="komposition_farver" class="section_width">
+		<h1>Komposition og farver</h1>
+		<div class="sectionwrapper">
+			<div class="column_wide">
+				<div class="column_content">
+					<div class="colors">
+						<div class="wrapper">
+							<div class="color1 box">#224870</div>
+							<div class="color2 box">#3b759f</div>
+							<div class="color3 box">#adcfd9</div>
+							<div class="color4 box">#ff9914</div>
+							<div class="color5 box">#e95454</div>
+							<div class="color6 box">#64a78b</div>
+							<div class="color7 box">#ffb368</div>
+						</div>
+					</div>
+					<div class="content">
+						<h2>Et rent udtryk</h2>
+						<p>I flat design bruges der ofte enkle, pastellignende farver, som med sin nedtonede farvemætning giver et æstetisk udtryk, som ikke tager fokus fra budskabet. Kraftigere farver bruges til de vigtige elementer, eller for at give balance til billedet. Men det er et temperamentsspørgsmål, som også kommer også an på målgruppen, m.m.</p>
+						<h2>Skygger</h2>
+						<p>Skygger var i begyndelsen også også no go, men der er løsnet lidt op på princippet, med nogle mere spændende illustrationer til følge.</p>
+						<h2>Et godt match</h2>
+						<p>Farverne skal harmonere, men stadig have så adskilte toner, at de kan bruges til at opdele fx sektioner på et website.</p>
+					</div>
+				</div>
+			</div>
+			<div class="column_narrow">
+				<h2>Komposition / layout</h2>
+				<p>Målet er et stilrent udseende, hvor de forskellige elementer er placeres harmonisk - evt. i grupper - med masser af luft omkring sig. Baggrunden er ensfarvet, hvilket giver ro. Teksturer, outlines eller andre effekter bruges som hovedregel ikke. Mange websites bruger stilen helt gennemgående, så der ikke findes fotos eller lignende, som er fra “den virkelige verden”.</p>
+				<h2>Grafikeksempel</h2>
+				<p>Her er brugt en “long Shadow” for dog at give det lidt dybde.</p>
+				<figure>
+					<picture>
+						<img src="images/flat_design_mobile.jpg" alt="Grafik med mange genstande på et bord set oppefra i flad stil."></picture>
+					<figcaption>Eksempel på et typisk, flat design illustratuion.</figcaption>
+				</figure>
+			</div>
+		</div>
+	</section>
+	<!-- komposition_farver slut -->
+
+	<!-- links start -->
+	<div class="section_background_links">
+		<section id="links" class="section_width">
+			<h1>Links</h1>
+			<div class="sectionwrapper">
+				<div class="content">
+					<div class="column">
+						<h2>Kilder</h2>
+						<ol>
+							<li><a href="https://en.wikipedia.org/wiki/Flat_design">Flat design - Wikipedia</a></li>
+
+
+
+							<li><a href="https://www.creativebloq.com/graphic-design/what-flat-design-3132112">The beginner’s guide to flat design</a></li>
+
+							<li><a href="https://designmodo.com/flat-design-principles">Principles of Flat Design - Designmodo</a></li>
+
+							<li><a href="https://www.interaction-design.org/literature/article/flat-design-an-introduction">Flat Design – An Introduction</a></li>
+
+							<li><a href="https://www.hongkiat.com/blog/flat-design-resources">Ultimate Guide to Flat Website Design</a></li>
+
+							<li><a href="https://handsomefrank.com/illustrators/malika-favre">Malika Favre - Handsome Frank Illustration</a></li>
+
+							<li><a href="http://madsberg.dk">Mads Bergs Website</a></li>
+						</ol>
+					</div>
+					<div class="column txt">
+						<h2>Grafiske designere - check deres arbejde ud!</h2>
+						<ol>
+							<li><a href="http://www.mikeperrystudio.com">Mike Perry – @mikeperrystudio</a></li>
+
+							<li><a href="https://instagram.com/timothygoodman">Timothy Goodman – @timothygoodman</a></li>
+
+							<li><a href="https://www.behance.net/misterdoodle">Mister Doodle – @misterdoodle</a></li>
+
+							<li><a href="https://instagram.com/neilsecretario/">Neil Secretario – @neilsecretario</a></li>
+
+							<li><a href="https://instagram.com/s_harrington">Steven Harrington – @s_harrington</a></li>
+
+							<li><a href="https://instagram.com/velvetspectrum">Luke Choice – @velvetspectrum</a></li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+
+	<!-- links slut -->
+
+	<!-- ekstra start -->
+	<section id="ekstra" class="section_width">
+		<h1>Ekstra</h1>
+		<div class="sectionwrapper">
+			<div class="content">
+
+				<div class="txt">
+					<h2>Galleri med billeder i flat design stil.</h2>
+					<p>Her følger lidt inspiration, som man kan kaste sig ud i, hvis man vil lære om designgenren. Det gælder især, hvis man har en illustrator i maven, men syndes man om at kode websites, er der også lidt overvejelser på UI/UX-fronten, som man kan dykke ned i.</p>
+				</div>
+				<div class="wrapper">
+					<figure>
+						<picture>
+							<source media="(min-width: 501px)" srcset="images/the_world_desktop.jpg">
+							<img src="images/the_world_mobile.jpg" alt="Grafik med jorden og rejserelatede ikoner omkring."></picture>
+						<figcaption>Rejsetema.</figcaption>
+					</figure>
+					<figure class="max">
+						<picture>
+							<source media="(min-width: 501px)" srcset="images/icons_desktop.jpg">
+							<img src="images/icons_mobile.jpg" alt="Grafik med ikoner i simpelt design og forskellige farver."></picture>
+						<figcaption>Ikon-design.</figcaption>
+					</figure>
+					<figure class="max">
+						<picture>
+							<source media="(min-width: 501px)" srcset="images/flat_travel_desktop.jpg">
+							<img src="images/flat_travel_mobile.jpg" alt="Grafik med emneopdelte områder."></picture>
+						<figcaption>Ikon-design.</figcaption>
+					</figure>
+					<figure class="max">
+						<picture>
+							<source media="(min-width: 501px)" srcset="images/flat_design_travel_desktop.jpg">
+							<img src="images/flat_design_travel_mobile.jpg" alt="Grafik af en åben kufftert med indhold, som ser lidt 3D-agtig ud."></picture>
+						<figcaption>Flat design i 3D-retning.</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ekstra slut -->
+
+	<!-- footer start -->
+	<footer>
+		<div class="content">
+			<h3>Flat design ca. 2006 til nu</h3>
+			<nav>
+				<ul>
+					<li><a href="#splash">Forside</a></li>
+					<li><a href="#om">Om</a></li>
+					<li><a href="#eksempler">Eksempler</a></li>
+					<li><a href="#typografi">Typografi</a></li>
+					<li><a href="#komposition_farver">Komposition og farver</a></li>
+					<li><a href="#links">Links</a></li>
+					<li><a href="#ekstra">Ekstra</a></li>
+					<li><a href="styletile.html#styletile">Styletile</a></li>
+				</ul>
+			</nav>
+			<p class="italic">Af Erik Granberg, KEA-MMD F18</p>
+		</div>
+	</footer>
+	<!-- footer slut -->
+
+	<!-- script -->
+	<script>
+		$('.slide').on('click', function() {
+			$('.dropdown-content').toggleClass('expanded');
+			$('header').toggleClass('nav_bg');
+		});
+		$('.link').on('click', function() {
+			$('.dropdown-content').removeClass('expanded');
+			$('header').removeClass('nav_bg');
+		});
+		$('header').on('mouseleave', function() {
+			$('.dropdown-content').removeClass('expanded');
+			$('header').removeClass('nav_bg');
+		});
+
+	</script>
+	<script>
+		// Hide Header on on scroll down
+		var didScroll;
+		var lastScrollTop = 0;
+		var delta = 5;
+		var navbarHeight = $('header').outerHeight();
+
+		$(window).scroll(function(event) {
+			didScroll = true;
+		});
+
+		setInterval(function() {
+			if (didScroll) {
+				hasScrolled();
+				didScroll = false;
+			}
+		}, 250);
+
+		function hasScrolled() {
+			var st = $(this).scrollTop();
+
+			// Make sure they scroll more than delta
+			if (Math.abs(lastScrollTop - st) <= delta)
+				return;
+
+			// If they scrolled down and are past the navbar, add class .nav-up.
+			// This is necessary so you never see what is "behind" the navbar.
+			if (st > lastScrollTop && st > navbarHeight) {
+				// Scroll Down
+				$('header').removeClass('nav-down').addClass('nav-up');
+			} else {
+				// Scroll Up
+				if (st + $(window).height() < $(document).height()) {
+					$('header').removeClass('nav-up').addClass('nav-down');
+				}
+			}
+
+			lastScrollTop = st;
+		}
+
+	</script>
+</body>
+
+</html>

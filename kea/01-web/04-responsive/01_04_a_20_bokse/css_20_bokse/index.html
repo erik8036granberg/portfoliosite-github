@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Den store css øvelse</title>
+	<link rel="stylesheet" href="style.css">
+	<!-- Herunder skal du indsætte dine links til Google Fonts: -->
+	<link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+</head>
+
+<body>
+	<div class="row">
+		<div class="box box1">
+			<h2>1. styling af tekst</h2>
+			<div class="image">
+				<img src="images/image1.png" alt="image1">
+			</div>
+			<div class="content">
+				<p>
+					Aliter enim explicari, quod quaeritur, non potest.
+				</p>
+			</div>
+			<p class="text">Teksten er stylet med hvid farve, fonten er Arial i størrelsen 1.6em og så har den fået en baggrund med text-shadow i magenta.
+				<br>
+				<br> Tip: color, font-family (Arial, sans-serif), font-size, text-shadow</p>
+		</div>
+		<div class="box box2">
+			<h2>2. styling af tekst</h2>
+			<div class="image">
+				<img src="images/image2.png" alt="image2">
+			</div>
+			<div class="content">
+				<p>
+					Aliter enim explicari, quod quaeritur, non potest.
+				</p>
+			</div>
+			<p class="text">Her skal du style i Helvetica og sørge for at stregen er tilpas tynd.
+				<br>
+				<br>Tip: font-family (Helvetica, sans-serif), font-size, font-weight</p>
+		</div>
+		<div class="box box3">
+			<h2>3. styling af tekst</h2>
+			<div class="image">
+				<img src="images/image3.png" alt="image3">
+			</div>
+			<div class="content">
+				<p>
+					Aliter enim explicari, quod quaeritur, non potest.
+				</p>
+			</div>
+			<p class="text">Her er der igen en tekst med en farvet skygge. Derudover er der en indrykning af den første linie.
+				<br>
+				<br>Tip: color, font-size, text-shadow, text-indent</p>
+		</div>
+		<div class="box box4">
+			<h2>4. styling af tekst</h2>
+			<div class="image">
+				<img src="images/image4.png" alt="image4">
+			</div>
+			<div class="content">
+				<p>
+					Aliter enim explicari, quod quaeritur, non potest.
+				</p>
+			</div>
+			<p class="text">Her skal du sørge for at teksten står med majuskler (uden at ændre i html'en.
+				<br>
+				<br>Tip: color, font-size, text-transform</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="box box5">
+			<h2>5. Webfont: @font-face</h2>
+			<div class="image">
+				<img src="images/image5.png" alt="image5">
+			</div>
+			<div class="content">El Rio Lobo</div>
+			<p class="text">Her har jeg brugt web-fonten "El Rio Lobo" som jeg har lavet på: <a href="https://www.fontsquirrel.com/tools/webfont-generator">fontsquirrel.com</a>. Husk at fonten (.woff og .woff2 filerne) skal uploades sammen med html og css for at virke.
+				<br>
+				<br>Tip: color, font-family, font-size, font-weight
+		</div>
+		<div class="box box6">
+			<h2>6. Webfont: @font-face</h2>
+			<div class="image">
+				<img src="images/image6.png" alt="image6">
+			</div>
+			<div class="content">Russiano</div>
+			<p class="text">Her skal du bruge @font-face til at indsætte fonten Russiano. Du kan se på det forrige eksempel hvordan jeg har gjort. Jeg har lagt webfontkittet med .woff filerne og eksempel-css i mappen "russiano". Det er en god idé at lade være med at installere fonten, så kan du med det samme se om det virker.
+				<br>
+				<br>Tip: color, font-family, font-size, font-weight
+
+		</div>
+		<div class="box box7">
+			<h2>7. Webfont: Google fonts</h2>
+			<div class="image">
+				<img src="images/image7.png" alt="image7">
+			</div>
+			<div class="content">Krona One</div>
+			<p class="text">Her har Google fonts gjort det nemmere for os. Du skal hente linket til fonten hos Google fonts og indsætte det i din html (i head).
+				<br>
+				<br>Tip: color, font-family, font-size
+			</p>
+		</div>
+		<div class="box box8">
+			<h2>8. Webfont: Google fonts</h2>
+			<div class="image">
+				<img src="images/image8.png" alt="image8">
+			</div>
+			<div class="content">Pacifico</div>
+			<p class="text">Du skal gøre det samme som i opgave 7, bare med en anden font.
+				<br>
+				<br>Tip: color, font-family, font-size
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="box box9">
+			<h2>9. linieafstand</h2>
+			<div class="image">
+				<img src="images/image9.png" alt="image9">
+			</div>
+			<div class="content">
+				<p> Quoniam, si dis placet, ab Epicuro loqui discimus. Negare non possum. Quid de Pythagora? </p>
+			</div>
+			<p class="text">Her vil vi have en baggrundsfarve og så en smule mere linieafstand end normalt.
+				<br>
+				<br>Tip: background-color, font-size, line-height</p>
+		</div>
+		<div class="box box10">
+			<h2>10. Tracking</h2>
+			<div class="image">
+				<img src="images/image10.png" alt="image10">
+			</div>
+			<div class="content">Quoniam, si dis placet, ab Epicuro loqui discimus. Negare non possum. Quid de Pythagora? </div>
+			<p class="text">Her skal du skabe større afstand mellem bogstaverne (tracking).
+				<br>
+				<br>Tip: font-size, letter-spacing</p>
+		</div>
+		<div class="box box11">
+			<h2>11. Styling af tekstlinks</h2>
+			<div class="image">
+				<img src="images/image11.png" alt="image11">
+			</div>
+			<div class="content">
+				<p> Satis est ad hoc responsum. <a href="#">Eaedem res maneant alio modo.</a> Sic enim censent, oportunitatis esse beate vivere. Istam voluptatem, inquit, Epicurus ignorat? </p>
+			</div>
+			<p class="text">Link vises default i en blå farve og med understregning. Her skal du ændre farve og udseende på dine links så de fremstår magenta, i en "tykkere" udgave og uden understregning:
+				<br>
+				<br>Tip: color, text-decoration, font-weight </p>
+		</div>
+		<div class="box box12">
+			<h2>12. Styling af tekstlinks</h2>
+			<div class="image">
+				<img src="images/image12.png" alt="image12">
+			</div>
+			<div class="content">
+				<p> Satis est ad hoc responsum. <a href="#">Eaedem res maneant alio modo.</a> Sic enim censent, oportunitatis esse beate vivere. Istam voluptatem, inquit, Epicurus ignorat? </p>
+			</div>
+			<p class="text">Her skal du style dine links så de ændrer udseende når man holder musen over dem. I dette tilfælde er det selectoren a:hover vi skal style.
+				<br>
+				<br> OBS! vær opmærksom på at man ikke kan holde musen over links på en mobil eller en tablet...
+				<br>
+				<br>Tip: color, background-color, text-decoration, font-weight </p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="box box13">
+			<h2>13. Baggrundsbillede</h2>
+			<div class="image">
+				<img src="images/image13.png" alt="image13">
+			</div>
+			<div class="content">baggrundsbillede</div>
+			<p class="text">Her skal du bruge background-image til at indsætte et baggrundsbillede. Jeg har lagt billedet (himmel.jpeg) i mappen. Herefter bruger du background-size til at definere hvor stort billedet skal være. Prøv dig frem i forhold til cover/contain.
+				<br>
+				<br>Tip: background-image, background-size, font-size, font-weight</p>
+		</div>
+		<div class="box box14">
+			<h2>14. Gradient</h2>
+			<div class="image">
+				<img src="images/image14.png" alt="image14">
+			</div>
+			<div class="content">Gradient</div>
+			<p class="text">Her skal du bruge en gradient. Læs på
+				<a href="https://www.w3schools.com/css/css3_gradients.asp">w3schools.com</a> hvordan man gør - det er ret nemt :-) Det kan være svært at få den helt nøjagtigt magen til vores, men du skal have 3 farver.
+				<br>
+				<br>Tip: background, font-size
+			</p>
+		</div>
+		<div class="box box15">
+			<h2>15. Gradient (hover)</h2>
+			<div class="image">
+				<img src="images/image15.png" alt="image15">
+			</div>
+			<div class="content">uigradients.com </div>
+			<p class="text">Her skal du også indsætte en gradient men du skal finde den på <a href="https://uigradients.com">uigradients.com</a> - den hedder "Atlas". Og så skal du sørge for at vi først kan se stylingen når vi holder musen over billedet (det er noget med :hover).
+				<br>
+				<br>Tip: background, font-size, color</p>
+		</div>
+		<div class="box box16">
+			<h2>16. Styling af links (nav)</h2>
+			<div class="image">
+				<img src="images/image16.png" alt="image16">
+			</div>
+			<div class="content">
+				<a href="#">Ipsum</a>
+			</div>
+			<p class="text">Her har jeg stylet et navigationslink. Vi lærer først om boxmodellen i morgen, men du har brug for at vide at du skal lave a-elementet om til et block-element hvis du vil sætte en kasse og en kant rundt om det. Jeg har også indsat et baggrundsbillede.
+				<br>
+				<br>Tips til boksen: background-image (green.jpeg), background-size, text-align
+				<br>
+				<br>Tips til linket: display, width, margin, padding, border
+				<br>
+				<br>Tip til styling af linket: text-align, font-family (Arial)
+			</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="box box17">
+			<h2>17. Styling af links (nav)</h2>
+			<div class="image">
+				<img src="images/image17.png" alt="image17">
+			</div>
+			<div class="content">
+				<a href="#">Lorem</a>
+				<a href="#">Ipsum</a>
+				<a href="#">Dolor</a>
+				<a href="#">Amet</a>
+			</div>
+			<p class="text">Denne opgave ligner meget den forrige, bare med flere links. Og så skal du definere hvordan det skal se ud i almindelig tilstand (a) og når musen holdes over (a:hover). OBS! Der er brugt en gennemsigtig hvid farve som baggrund ved hover (den kan du lave med rgba)
+				<br>
+				<br>Tip: Se forrige eksempel for baggrundsbillede (green2.jpg)
+				<br>
+				<br>Tip(a): display, padding, color, font-size, text-decoration
+				<br>
+				<br>Tip(a:hover): background-color, color </p>
+		</div>
+		<div class="box box18">
+			<h2>18. Styling af links (nav)</h2>
+			<div class="image">
+				<img src="images/image18.png" alt="image18">
+			</div>
+			<div class="content">
+				<a href="#">Lorem</a>
+				<a href="#">Ipsum</a>
+				<a href="#">Dolor</a>
+				<a href="#">Amet</a>
+			</div>
+			<p class="text">Samme opgave som den forrige men med nyt baggrundsbillede (blue.jpeg) og uden hover-tilstand.
+				<br>
+				<br>Tip(a): display, padding, border-left, border-right, text-align, font-family, color, text-decoration</p>
+		</div>
+		<div class="box box19">
+			<h2>19. Styling af links (nav)</h2>
+			<div class="image">
+				<img src="images/image19.png" alt="image19">
+			</div>
+			<div class="content">
+				<a href="#">Lorem</a>
+				<a href="#">Ipsum</a>
+				<a href="#">Dolor</a>
+				<a href="#">Amet</a>
+			</div>
+			<p class="text">Her er der ikke brug for en boks omkring linket så du skal kun style linket i en mørkelilla farve og sørge for at der kommer en streg over linket ved hover.
+				<br>
+				<br>Tip(a): padding, color, font-style, font-size, text-decoration
+				<br>
+				<br>Tip(a:hover): text-decoration</p>
+		</div>
+		<div class="box box20">
+			<h2>20. Styling af links (nav)</h2>
+			<div class="image">
+				<img src="images/image20.png" alt="image20">
+			</div>
+			<div class="content">
+				<a href="#">Lorem</a>
+				<a href="#">Ipsum</a>
+				<a href="#">Dolor</a>
+				<a href="#">Amet</a>
+			</div>
+			<p class="text">Minder igen meget om opgave 1, 18 og 19. Du skal lave linket om til en boks og style både a og a:hover.
+				<br>
+				<br>Tips(a): display, padding, border, border-radius, color, font-family (sans-serif), font-size, text-decoration
+				<br>
+				<br>Tips(a:hover): background-color, color</p>
+		</div>
+	</div>
+</body>
+
+</html>

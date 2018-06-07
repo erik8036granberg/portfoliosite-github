@@ -1,0 +1,144 @@
+body {
+	font-size: 1em;
+	color: #4a4a4a;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: #74abdb;
+
+}
+
+.forklaring {
+	color: red;
+}
+
+/* generelt */
+
+img {
+	width: 100%;
+	transition: width 2s;
+	-webkit-transition: width 2s;
+	/* Safari */
+}
+
+.sectionwrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* om */
+
+#om .column {
+	flex-grow: 1;
+	flex-basis: 400px;
+}
+
+/* Eksempler */
+
+#eksempler .column {
+	flex-grow: 1;
+	flex-basis: 250px;
+}
+
+#eksempler .column_content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+
+/* Typografi */
+
+#typografi .column_wide {
+	flex-grow: 2;
+	flex-basis: 600px;
+}
+
+#typografi .column_narrow {
+	flex-grow: 1;
+	flex-basis: 300px;
+}
+
+#typografi .top {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#typografi .bottom {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#typografi .txt {
+	flex-grow: 1;
+	flex-basis: 300px;
+}
+
+#typografi .image {
+	flex-grow: 1;
+	flex-basis: 300px;
+}
+
+/* Komposition - farver */
+
+#komposition_farver .column_wide {
+	flex-grow: 3;
+	flex-basis: 600px;
+}
+
+#komposition_farver .column_narrow {
+	flex-grow: 1;
+	flex-basis: 300px;
+}
+
+#komposition_farver .column_content {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+#komposition_farver .colors {
+	flex-grow: 1;
+	flex-basis: 100px;
+}
+
+#komposition_farver .content {
+	flex-grow: 2;
+	flex-basis: 200px;
+
+}
+
+/* Links */
+
+#links .sectionwrapper {
+	display: block;
+	flex-wrap: nowrap;
+}
+
+/* Ekstra */
+
+#ekstra .sectionwrapper {
+	display: block;
+	flex-wrap: nowrap;
+}
+
+#ekstra .wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+/* styletile */
+
+#styletile .sectionwrapper {
+	display: block;
+	flex-wrap: nowrap;
+}

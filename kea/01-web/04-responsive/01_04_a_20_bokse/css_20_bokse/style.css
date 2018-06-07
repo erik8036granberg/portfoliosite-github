@@ -1,0 +1,298 @@
+/*------------------------------Generelle indstillinger------------------------*/
+
+img {
+	width: 320px;
+}
+
+.image {
+	outline: 1px solid lightgray;
+	margin-bottom: 5px;
+}
+
+.text {
+	font-family: monospace;
+	background-color: #f0f0f0;
+	width: 310px;
+	padding: 5px;
+}
+
+h2 {
+	font-family: monospace;
+	font-size: 1.4em;
+	font-weight: 600;
+	width: 320px;
+}
+
+.box {
+	padding: 5px;
+	outline: 1px solid gray;
+	margin-bottom: 10px
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.content {
+	background-color: #fff;
+	outline: 1px dashed gray;
+	width: 310px;
+	height: 100px;
+	padding: 5px;
+}
+
+/*-------------------------------boks 1--------------------------------*/
+
+.box1 .content {
+	color: #fff;
+	font-family: Arial, sans-serif;
+	font-size: 1.6rem;
+	text-shadow: 5px 5px 20px magenta;
+
+}
+
+/*-------------------------------boks 2--------------------------------*/
+
+.box2 .content {
+	font-family: helvetica, sans-serif;
+	font-size: 1.45rem;
+	font-weight: 300;
+}
+
+/*-------------------------------boks 3--------------------------------*/
+
+.box3 .content {
+	color: green;
+	font-size: 1.6rem;
+	text-shadow: 2px 2px 5px #27ff00;
+	text-indent: 1.3rem;
+}
+
+/*-------------------------------boks 4--------------------------------*/
+
+.box4 .content {
+	color: red;
+	font-size: 1.3rem;
+	text-transform: uppercase;
+}
+
+/*-------------------------------boks 5--------------------------------*/
+
+@font-face {
+	/*Denne kode fortæller browseren hvor den skal finde font-filerne (nede i mappen: "elriolobo"). Du kan flytte dem ud af mappen når du skal uploade dem, men så skal du ændre stien */
+	font-family: 'el_rio_lobonormal';
+	src: url('fonts/elriolobo/elriott2-webfont.woff2') format('woff2'),
+	url('fonts/elriolobo/elriott2-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.box5 .content {
+	/*Denne kode bruger fonten*/
+	color: #ffa502;
+	font-family: 'el_rio_lobonormal';
+	font-size: 4rem;
+}
+
+/*-------------------------------boks 6--------------------------------*/
+
+@font-face {
+	font-family: 'russianoregular';
+	src: url('fonts/russiano/russiano-webfont.woff2') format('woff2'),
+	url('fonts/russiano/russiano-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.box6 .content {
+	font-family: 'russianoregular';
+	color: #cb2c11;
+	font-size: 3rem;
+}
+
+/*-------------------------------boks 7--------------------------------*/
+
+.box7 .content {
+	font-family: 'Krona One', sans-serif;
+	color: #1282cc;
+	font-size: 2.6rem;
+}
+
+/*-------------------------------boks 8--------------------------------*/
+
+.box8 .content {
+	font-family: 'Pacifico', cursive;
+	color: #a301fa;
+	font-size: 3.75rem;
+}
+
+/*-------------------------------boks 9--------------------------------*/
+
+.box9 .content {
+	background-color: #e3fab2;
+	font-size: 1.2rem;
+	line-height: 1.7rem;
+}
+
+/*-------------------------------boks 10--------------------------------*/
+
+.box10 .content {
+	font-size: 1.3rem;
+	letter-spacing: 0.1rem;
+}
+
+/*-------------------------------boks 11--------------------------------*/
+
+.box11 .content a {
+	text-decoration: none;
+	color: #ff02ff;
+	font-weight: bold;
+}
+
+/*-------------------------------boks 12--------------------------------*/
+
+.box12 .content a:hover {
+	color: #fff;
+	text-decoration: none;
+	background-color: #ff02ff;
+	font-weight: bold;
+}
+
+/*-------------------------------boks 13--------------------------------*/
+
+.box13 .content {
+	background-image: url(himmel.jpeg);
+	background-size: contain;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+/*-------------------------------boks 14--------------------------------*/
+
+.box14 .content {
+	background: linear-gradient(#ff33f6, #ffae8f, #ff0000);
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+/*-------------------------------boks 15--------------------------------*/
+
+.box15 .content:hover {
+	background: linear-gradient( +90deg, #feac5e, #c779d0, #4bc0c8);
+	font-size: 1.3rem;
+	color: #fff;
+}
+
+/*-------------------------------boks 16--------------------------------*/
+
+.box16 .content {
+	/*Denne kode indsætter et billede i baggrunden og centrerer indholdet*/
+	background-image: url(green.jpeg);
+	background-size: cover;
+	text-align: center;
+}
+
+.box16 .content a {
+	/*Denne kode laver et link om til en boks med mulighed for størrelse, margin, padding og border*/
+	display: block;
+
+	/*Denne kode styler boksen*/
+	width: 10rem;
+	margin: 1rem auto;
+	padding: 0.8rem;
+	padding-top: 0.7rem;
+	border: 1px solid #fff;
+	font-family: Arial, sans-serif;
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+	text-align: center;
+}
+
+/*-------------------------------boks 17--------------------------------*/
+
+.box17 .content {
+	/*Tips: background-image, background-size, text-align  */
+	background-image: url(green2.jpeg);
+	background-size: cover;
+	text-align: center;
+}
+
+.box17 .content a {
+	/*Tips: display, padding,*/
+	/*Styling af link: color, font-size, text-decoration  */
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.3rem;
+	padding-top: 0.1rem;
+	padding-bottom: 0.1rem;
+	padding-right: 0.25rem;
+	padding-left: 0.25rem;
+}
+
+.box17 .content a:hover {
+	/*    Hvordan skal linket se ud når du holder musen over  */
+	background-color: rgba(255, 255, 255, 0.6);
+	color: #246900;
+}
+
+/*-------------------------------boks 18--------------------------------*/
+
+.box18 .content {
+	background-image: url(blue.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.box18 .content a {
+	font-family: verdana, sans-serif;
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	padding: 0.3rem;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
+
+/*-------------------------------boks 19--------------------------------*/
+
+.box19 .content a {
+	text-decoration: none;
+	font-size: 1.25rem;
+	font-style: italic;
+	padding: 0.23rem;
+	font-weight: bold;
+	color: #711171;
+
+}
+
+.box19 .content a:hover {
+	text-decoration: overline;
+}
+
+/*-------------------------------boks 20--------------------------------*/
+
+.box20 .content a {
+	display: inline-block;
+	font-family: sans-serif;
+	font-size: 1.1rem;
+	font-weight: bold;
+	padding: 0.3rem;
+	padding-right: 0.55rem;
+	padding-left: 0.55rem;
+	text-decoration: none;
+	color: #000;
+	border: 1px solid #ff7f4f;
+	border-radius: 0.2rem;
+}
+
+.box20 .content a:hover {
+	background-color: #ff7f4f;
+	color: #fff;
+}

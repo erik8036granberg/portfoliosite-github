@@ -1,0 +1,506 @@
+/* generelt */
+
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	color: #4a4a4a;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	width: 100%;
+}
+
+p {
+	line-height: 1.6em;
+}
+
+h1,
+h2 {
+	font-family: 'Fjalla One', sans-serif;
+	text-transform: uppercase;
+	color: #3b759f;
+}
+
+h1 {
+	font-size: 2.5rem;
+	letter-spacing: 0.05rem;
+	padding-left: 2rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+h2 {
+	font-size: 1.3rem;
+	margin-top: 2.1rem;
+}
+
+div h2:first-child {
+	margin-top: 0;
+}
+
+a {
+	color: #3b759f;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:link {
+	color: #3b759f;
+}
+
+a:visited {
+	color: #3b759f;
+}
+
+a:hover {
+	color: #adcfd9;
+}
+
+a:active {
+	color: #3b759f;
+}
+
+.manchet {
+	font-size: 1.1rem;
+	font-weight: bold;
+	color: #3b759f;
+	line-height: 2rem;
+	padding-bottom: 3rem;
+	margin-top: 0;
+}
+
+figure {
+	margin: 0;
+	font-size: 0.8rem;
+	font-style: italic;
+	padding-bottom: 0.5rem;
+	width: auto;
+}
+
+.section_width {
+	max-width: 80rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.section_background_eksempler {
+	background-color: #ffebd7;
+	width: 100vw;
+}
+
+.section_background_links {
+	background-color: #d0e4ea;
+	width: 100vw;
+}
+
+#om,
+#eksempler,
+#typografi,
+#komposition_farver,
+#links,
+#ekstra {
+	padding-bottom: 2rem;
+	padding-top: 2rem;
+}
+
+footer {
+	height: 7rem;
+	background-color: #3b759f;
+	color: #fff;
+	padding: 2rem;
+}
+
+/* nav */
+
+nav {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0.5rem 0 1rem 2rem;
+	white-space: nowrap;
+}
+
+nav li {
+	list-style-type: none;
+	padding-right: 20px;
+}
+
+nav a:link {
+	color: #3b759f;
+	text-decoration: none;
+}
+
+nav a:visited {
+	color: #3b759f;
+}
+
+nav a:hover {
+	color: #adcfd9;
+}
+
+nav a:active {
+	color: #3b759f;
+}
+
+/* om */
+
+#om .sectionwrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#om .column {
+	flex-grow: 1;
+	flex-basis: 300px;
+	padding: 1.5rem;
+}
+
+#om img {
+	max-width: 400px;
+}
+
+/* eksempler */
+
+#eksempler .sectionwrapper {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0.75rem;
+}
+
+#eksempler .column {
+	flex-grow: 1;
+	flex-basis: 250px;
+	padding: 1.5rem;
+	margin: 0.75rem;
+	background-color: #fff;
+	margin-bottom: 1rem;
+}
+
+#eksempler .column_content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+
+#eksempler .bottom {
+	margin-top: 1rem;
+}
+
+/* typografi */
+
+#typografi .sectionwrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#typografi .column_wide {
+	flex-grow: 2;
+	flex-basis: 600px;
+}
+
+#typografi .column_narrow {
+	flex-grow: 1;
+	flex-basis: 300px;
+	padding: 2rem;
+	padding-top: 0;
+}
+
+#typografi .column_narrow img {
+	max-width: 400;
+}
+
+#typografi .top {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#typografi .bottom {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#typografi .txt {
+	flex-grow: 1;
+	flex-basis: 300px;
+	padding: 2rem;
+	padding-top: 0;
+}
+
+#typografi .image {
+	flex-grow: 1;
+	flex-basis: 300px;
+	padding: 2rem;
+	padding-top: 0;
+}
+
+/* komposition - farver */
+
+.divider {
+	border-top: 1px solid #3b759f;
+	height: 1px;
+	width: 100vw;
+}
+
+#komposition_farver .sectionwrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#komposition_farver .column_wide {
+	flex-grow: 1;
+	flex-basis: 300px;
+	padding: 2rem;
+}
+
+#komposition_farver .column_narrow {
+	flex-grow: 1;
+	flex-basis: 300px;
+	padding: 2rem;
+}
+
+#komposition_farver .column_content {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+#komposition_farver .colors {
+	flex-grow: 1;
+	flex-basis: 100px;
+}
+
+#komposition_farver .content {
+	flex-grow: 2;
+	flex-basis: 200px;
+	margin-left: 3vw;
+}
+
+#komposition_farver colors_content {
+	display: flex;
+	flex-direction: column;
+}
+
+#komposition_farver .box {
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	color: #000;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+#komposition_farver .box * {
+	text-align: center;
+}
+
+#komposition_farver .color1 {
+	background-color: #224870;
+}
+
+#komposition_farver .color2 {
+	background-color: #3b759f;
+}
+
+#komposition_farver .color3 {
+	background-color: #adcfd9;
+}
+
+#komposition_farver .color4 {
+	background-color: #ff9914;
+}
+
+#komposition_farver .color5 {
+	background-color: #e95454;
+}
+
+#komposition_farver .color6 {
+	background-color: #64a78b;
+}
+
+#komposition_farver .color7 {
+	background-color: #ffb368;
+}
+
+#komposition_farver .column_narrow img {
+	max-width: 500px;
+}
+
+/* links */
+
+#links .content {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#links .content .column {
+	flex-grow: 1;
+	flex-basis: 400px;
+	padding: 2rem;
+	padding-top: 0;
+}
+
+/* ekstra */
+
+#ekstra .content {
+	padding: 2rem;
+	padding-top: 0;
+}
+
+#ekstra .content .wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#ekstra .content .wrapper figure {
+	margin-top: 2rem;
+}
+
+#ekstra .max {
+	max-width: 500px;
+}
+
+/* styletile */
+
+#styletile {
+	padding: 2rem;
+}
+
+#styletile h1 {
+	margin-top: 0;
+	padding-left: 0;
+}
+
+
+#styletile h2 {
+	padding-top: 2rem;
+}
+
+/* moodboard */
+
+#styletile .moodboard .content {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#styletile .moodboard .column {
+	flex-grow: 2;
+	flex-basis: 400px;
+}
+
+/* fonte */
+
+#styletile .fonte .content {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#styletile .fonte .column {
+	flex-grow: 1;
+	flex-basis: 400px;
+}
+
+#styletile .fonte p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+#styletile .fonte h1 {
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: #3b759f;
+
+}
+
+#styletile .fonte .forklaring {
+	color: red;
+}
+
+/* farver */
+
+#styletile .farver .colors {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#styletile .farver .color {
+	flex-basis: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	color: #000;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+#styletile .farver .box1 {
+	background-color: #224870;
+}
+
+#styletile .farver .box2 {
+	background-color: #3b759f;
+}
+
+#styletile .farver .box3 {
+	background-color: #adcfd9;
+}
+
+#styletile .farver .box4 {
+	background-color: #ff9914;
+}
+
+#styletile .farver .box5 {
+	background-color: #e95454;
+}
+
+#styletile .farver .box6 {
+	background-color: #64a78b;
+}
+
+#styletile .farver .box7 {
+	background-color: #ffb368;
+}
+
+/* splash_versions */
+
+#styletile .splash_versions .content {
+	display: flex;
+}
+
+#styletile .splash_versions .content .splash {
+	margin-right: 10px;
+}
+
+/* ikoner */
+
+#styletile .ikoner .content {
+	display: flex;
+}
+
+#styletile .ikoner .content .ikon {
+	margin-right: 10px;
+}
+
+/* media queries */
+
+@media (min-width: 64rem) {
+
+	nav ul {
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+	#ekstra .max {
+		margin-right: 2rem;
+	}
+}
