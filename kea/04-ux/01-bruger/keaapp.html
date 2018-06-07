@@ -1,0 +1,513 @@
+<!doctype html>
+<html class="no-js" lang="da">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Kea-app</title>
+	<meta name="description" content="Dokumentation af processen omkring udvikling af KEA APP">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<!-- Navigation -->
+
+		<nav>
+			<ul>
+				<li><a href="index.html">Forside</a></li>
+				<li class="dropdown"><a href="#">Research</a>
+					<ul class="dropdown-content">
+						<li><a href="interviews.html">Interviews</a></li>
+						<li><a href="observationer.html">Observationer</a></li>
+						<li><a href="spoergeskema.html">Spørgeskema</a></li>
+					</ul>
+				</li>
+				<li class="dropdown"><a href="#">User Experience</a>
+					<ul class="dropdown-content">
+						<li><a href="experiencemap.html">Experience Map</a></li>
+						<li><a href="personas.html">Personas</a></li>
+						<li><a href="storyboard.html">Story Board</a></li>
+						<li><a href="bmc.html">Business Model Canvas</a></li>
+					</ul>
+				</li>
+				<li class="dropdown"><a href="#">Prototype</a>
+					<ul class="dropdown-content">
+						<li><a href="prototypeoptagelse.html">Paper Prototype Optagelse</a></li>
+						<li><a href="featuresfunktionaliteter.html">Features og funktionaliteter</a></li>
+						<li><a href="prototypedokumentation.html">Dokumentation af Paper Prototype</a></li>
+						<li><a href="prototypetest.html">Test af Paper Prototype</a></li>
+					</ul>
+				</li>
+				<li><a href="keaapp.html">Kea-app</a>
+			</ul>
+			</li>
+			</ul>
+		</nav>
+
+		<!-- Navigation slut -->
+
+		<!-- Sidens indhold -->
+		<main>
+			<article class="rowcolors">
+				<div class="row">
+					<section id="oversigt">
+
+						<h1>Kea-app</h1>
+
+						<h3>Oversigt:</h3>
+						<ul class="liste">
+							<li><a href="#github">Link til GitHub-repository</a></li>
+							<li><a href="#brugerresearch">Brugerresearch</a></li>
+							<li><a href="#experience_map">Experience map</a></li>
+							<li><a href="#problemformulering">Problemformulering</a></li>
+							<li><a href="#persona">Persona</a></li>
+							<li><a href="#storyboard">Storyboard</a></li>
+							<li><a href="#features_funktionaliteter">Features og funktionaliteter</a></li>
+							<li><a href="#dokumentation_charette">Dokumentation af Design Charette</a></li>
+							<li><a href="#prototype">Prototype</a></li>
+							<li><a href="#ui_ikoner">UI-ikoner</a></li>
+							<li><a href="#xd_prototype">XD prototype</a></li>
+							<li><a href="#test_prototype">Test af prototype</a></li>
+							<li><a href="#pitch">Pitch-oplæg</a></li>
+							<li><a href="#test_2_prototype">DX prototype 2</a></li>
+							<li><a href="#praesentation_dx_prototype">Præsentation af XD-prototype</a></li>
+						</ul>
+
+						<h3>Opgavebeskrivelse:</h3>
+						<p>Målet med opgaven er at fremstille en prototype på en KEA-app, som kan øge samarbejdet og det sociale fællesskab mellem de danske og internationale multimediedesignstuderende, samt evt. at forbedre jobmulighederne efter endt uddannelse.</p>
+
+						<p>Derudover skal den være udstyret med én eller flere funktioner, som kan gøre dagligdagen lettere, eller have features, som kan gøre en forskel for de studerende.</p>
+
+						<p>Til at researche og udvikle prototypen, vil jeg anvende Design Thinking's 7 faser til at opdele projektet i mere håndtérbare bidder, og til at hoppe frem og tilbage imellem disse områder, når det giver mening for udformningen, eller hvis nye idéer/informationer giver anledning til en anderledes implementering af design eller funktionalitet.</p>
+					</section>
+				</div>
+
+
+				<div class="row">
+					<section id="github">
+						<h2>Link til GitHub-repository</h2>
+						<a href="https://github.com/erik8036granberg/04_ux-projekt">https://github.com/erik8036granberg/04_ux-projekt</a>
+
+						<p>Commit & push med jævne mellemrum, for at holde repository opdateret.</p>
+					</section>
+				</div>
+
+				<div class="row">
+					<section id="brugerresearch">
+						<h2>Brugerresearch</h2>
+						<p>Til at samle data og indsigter fra målgruppen (som rammes forholdsvist nøjagtigt, da vi som studerende selv indgår som “kunde” for app-prototypen) har multimediedesignholdet udfyldt et spørgeskema. Overordnet set, får man på denne måde demografisk data, IT- og smartphone-vaner, hvad de synes om KEA/uddannelsen, samt den nuværende relation til de internationale studerende.</p>
+						<p>Dette er gjort via Google Forms + Google Sheets som output. Herefter kan man studere/udtrække relevante oplysninger, eller visualisere resultatet ved brug af grafer.</p>
+
+						<img src="images/keaapp_data.png" class="dok_billede" alt="Post-its Experiencemap">
+
+						<h3>Empathize emner</h3>
+
+						<p class="fed">Behov:</p>
+
+						<ul>
+							<li>Samarbejde - fx dele grupper/projekter på tværs af holdene?</li>
+							<li>Netværk - Udvide netværk på tværs af nationaliteter?</li>
+							<li>Kreativitet/sprog - Flere nye ideer og kreative hoveder. Man har muligheden for at forbedre sit engelsk?</li>
+							<li>Sprog - Træning i at arbejde, evt. med udfordringer som sprogbarrierer?</li>
+
+						</ul>
+
+						<p class="fed">Handlinger/føleleser:</p>
+
+						<ul>
+							<li>Møder ikke rigtig de internationale studerende (mangel på kontakt)</li>
+							<li>Møder kun de internationale studerende til fredagsbar (ikke faglig kontakt)</li>
+							<li>Savner et chat forum for kea studerende, hvor man let kan dele filer og lave grupper m.m. (kontakt/hjælp/organisering)</li>
+							<li>Mangler app til skema. Et ordentligt forum til overblik over opgaver og lektier (mangler overblik)</li>
+						</ul>
+
+						<p class="fed">Spørgeguide:</p>
+
+						<ul>
+							<li>Synes du, at det er svært, når der skal dannes grupper til skoleopgaver?</li>
+							<li>Ville en app til at danne grupper med være en god idé?</li>
+							<li>Tror du på, at en app med gruppedannelse på tværs af sproglinjer vil fungere?</li>
+							<li>Kommentarer?</li>
+						</ul>
+					</section>
+				</div>
+
+				<div class="row">
+					<section id="experience_map">
+						<h2>Experience map</h2>
+						<p>Post-its lavet på baggrund af spørgeskema, og opdelt efter retning på app-idé eller mere generel forbedring af studiemiljøet/skolen:</p>
+
+						<img src="images/keaapp_experiencemap_1.png" class="dok_billede" alt="Post-its Experiencemap">
+						<img src="images/keaapp_experiencemap_2.png" class="dok_billede" alt="Post-its Experiencemap">
+						<img src="images/keaapp_experiencemap_3.png" class="dok_billede" alt="Post-its Experiencemap">
+
+						<p>Arbejdscitater:</p>
+
+						<img src="images/keaapp_citatudpluk.svg" class="dok_billede" alt="Udpluk af interessante citater">
+
+					</section>
+				</div>
+
+				<div class="row">
+					<section id="problemformulering">
+						<h2>Problemformulering</h2>
+
+						<p class="fed">Primært: Gruppedannelse - også på tværs af sproglinjer.</p>
+
+						<p>Der kan nogle gange være en udfordring at danne grupper - blot i en almindelige klasse - og det er meget få, som bare kaster sig ud i det med de udenlandske studerende - om det så drejer sig om en fast skoleopgave, et lektiesamarbejde, arrangement, m.m.</p>
+
+						<p class="fed">Evt. sekundært: Forum for studerende og tilgang til sit skema i mobilform.</p>
+
+						<p>Der kan ofte være behov for svar på spørgsmål om igangværende opgaver, praktiske problemer/uklarheder, eller et skema, som ikke kan ses ordentligt på mobilen.</p>
+
+						<p class="fed">Problemet er bl.a. (pains)</p>
+
+						<ul>
+							<li>Svært at danne de rigtige grupper ift. variation (folk vælger ofte de samme personer) og/eller kompetencer.</li>
+							<li>Manglende kontakt til de udenlandske studerende.</li>
+							<li>Manglende struktur/organisering.</li>
+						</ul>
+
+						<p class="fed">Ønsket er (goals):</p>
+
+						<ul>
+							<li>Få en god, organiseret arbejdsgang</li>
+							<li>Få velfungerende grupper</li>
+							<li>Blive bedre til engelsk, og udvide sin kulturelle horisont</li>
+						</ul>
+
+						<p class="fed">Udviklingsmål:</p>
+
+						<p>Problemet vil være løst, når man bevæger sig bort fra en "smal" gruppedannelse/organisering, til en "bred", med mange input, som stadig har en fornuftig, faglig sammensætning?</p>
+
+						<p>Løsning: Udvikle en app, hvor man danne arbejdsgrupper mellem KEAs uddannelseshold (fx A og B), de internationale sproglinjer, eller andre, hvis det giver mening?</p>
+
+						<p>Jeg tænker, at man skal kunne oprette en gruppe, og forespørge de tilgængelige elever om deltagelse i gruppen, efter nogle valgte parametre - også evt. også til noget "ikke-opgavebaseret", fx samarbejde om lektier, eller lignende.</p>
+
+						<p>Som ekstra features kan være chatforum, skemavisning, eller andre tool, som kan tilføjes senere.</p>
+
+				</div>
+
+				<div class="row">
+					<section id="persona">
+						<h2>Persona</h2>
+						<img src="images/keaapp_persona.svg" alt="Persona til kea-app dokumentation">
+
+						<p>Persona er baseret på resultaterne fra det fælles spørgeskema, hvor især graferne hurtig viser topscorerne i hver kategori, og giver en fornuftig "gennemsnits-type". Et godt kendskab til sine medstuderende som "gruppe", gør naturligvis også at man kan foretage et kvalificeret gæt, hvis mere personlige attributter skal med i persona-fortællingen. </p>
+					</section>
+				</div>
+
+				<div class="row">
+					<section id="storyboard">
+						<h2>Storyboard</h2>
+
+						<img src="images/keaapp_storyboard.png" alt="Storyboard til kea-app">
+
+					</section>
+				</div>
+
+				<div class="row">
+					<section id="features_funktionaliteter">
+						<h2>Features og funktionaliteter</h2>
+
+						<p class="fed">Phone features:</p>
+						<ul>
+							<li>Fuld skærm</li>
+							<li>Push beskeder</li>
+							<li>Tastatur</li>
+						</ul>
+
+						<p class="fed">Brugersituationer:</p>
+						<ul>
+							<li>Oprette/redigere/slette profil</li>
+							<li>Oprette gruppe</li>
+							<li>Joine gruppe</li>
+							<li>Søge efter deltagere, som vil joine egen gruppe</li>
+							<li>Slette gruppe</li>
+						</ul>
+
+						<p class="fed">Brugerkontekst:</p>
+						<ul>
+							<li>Slå noget op/find noget: Bruges som regel i klassen/skolen, når der er uddelt et projet, som kræver gruppearbejde.</li>
+							<li>Rediger/opret: Når grupper skal passes/organiseres</li>
+						</ul>
+
+						<p>Jeg ville bruge det, hvis der hurtigt skal laves nogle grupper, eller hvis de skal være mere blandede end normalt - fx med de udenlandske studerende, på det planlagt forløb</p>
+
+						<p class="fed">Android / iphone:</p>
+						<p>Jeg laver den umiddelbart prototypen i Android-format i Adobe DX, da jeg har mobil til at kunne teste den størrelse. Det kan evt. senere kan produceres som webapp, hvor visningen bliver ens, og der er taget forbehold for brugsforskelle mellem telefontyperne, som kan spille ind.
+						</p>
+
+						<p class="fed">AOF Aktiviteter:</p>
+						<ul>
+							<li>Oprette/redigere/slette profil</li>
+							<li>Oprette gruppe</li>
+							<li>Joine gruppe</li>
+							<li>Søge efter deltagere, som vil joine egen gruppe</li>
+							<li>Slette gruppe</li>
+						</ul>
+
+						<p class="fed">AOF Objekter:</p>
+						<ul>
+							<li>Gruppe-"kasser"</li>
+							<li>Knapper/ikoner</li>
+						</ul>
+
+						<p class="fed">AOF Features/funktionaliteter:</p>
+						<ul>
+							<li>Home</li>
+							<li>Grupper</li>
+							<li>- - Opret gruppe</li>
+							<li>- - - - Skriv gruppenavn</li>
+							<li>- - - - Vælg kategori</li>
+							<li>- - - - Skriv gruppebeskrivelse</li>
+							<li>- - Mine grupper</li>
+							<li>- - Rediger/slet gruppe</li>
+							<li>Profil</li>
+							<li>- - Opret profil</li>
+							<li>- - - - Skriv brugernavn</li>
+							<li>- - - - Skriv kea-mail</li>
+							<li>- - - - Skriv adgangskode</li>
+							<li>- - - - Gentag adgangskode</li>
+							<li>- - - - Vælg foretrukne opgavetyper med rating 1-5</li>
+							<li>- - Rediger/slet profil</li>
+						</ul>
+
+						<br>
+
+						<h3>Features tilføjet efter første test af DX-prototype & pitch</h3>
+						<ul>
+							<li>Sprogskifte - dansk/engelsk</li>
+							<li>Omstruktureret gruppe-visning/styring med visningsfilte og "match" mellem grupper og deltagere</li>
+							<li>Facebook-login</li>
+							<li>Beskeder og svar på gruppeforespørgsler som menupunkt under grupper - Notifikationer. Udråbs-symbol.</li>
+							<li>En tilbage-knap i topmenu</li>
+							<li>Log-ud, sprogskifte og Om kea-appen i topmenuen</li>
+							<li>Admin-punkt ændret til "Mine Grupper". Hak beholdt som symbol</li>
+							<li>Stjerne-symbol for "match" i gruppe-liste og ved forespørgsler.</li>
+							<li>Klik på Match-symbol for at kriterier</li>
+							<li>Tragt-symbol for filtering ved gruppe-liste, og filtrering valg ved gruppe-liste.</li>
+							<li>Redigering ved relevante emner. Pen-symbol.</li>
+							<li>Søgefelt i gruppe-liste</li>
+							<li>Log-ud skærm</li>
+
+						</ul>
+
+					</section>
+				</div>
+
+				<div class="row">
+					<section id="dokumentation_charette">
+						<h2>Dokumentation af Design Charette</h2>
+
+						<p>Første udkast (delvist forkastet) - Painpoint: Problem med opgave (forum-idé)</p>
+
+						<img src="images/keaapp_charette.png" class="dok_billede_hoej" alt="Dokumentation af Design Charette">
+
+
+						<p>Andet udkast - Painpoint: Gruppedannelse til projekt/opgave</p>
+
+						<img src="images/keaapp_charette_2.png" class="dok_billede_hoej" alt="Dokumentation af Design Charette 2">
+					</section>
+				</div>
+
+				<div class="row">
+
+					<section id="prototype">
+						<h2>Prototype</h2>
+						<p>Startskærm - klik på "Opret profil"-knappen (lidt nede)</p>
+						<img src="images/keaapp_prototype_1.png" class="dok_billede_hoej" alt="Kea-app Prototype i papir">
+						<p>Profilside - Klik på "Næste"-knappen</p>
+						<img src="images/keaapp_prototype_2.png" class="dok_billede_hoej" alt="Kea-app Prototype i papir">
+						<p>Profilside del 2 - klik på "Næste"-knappen igen</p>
+						<img src="images/keaapp_prototype_3.png" class="dok_billede_hoej" alt="Kea-app Prototype i papir">
+						<p>Profilside del 3 klik på "Gem"-knappen for at afslutte profilen</p>
+						<img src="images/keaapp_prototype_4.png" class="dok_billede_hoej" alt="Kea-app Prototype i papir">
+						<p>Tilbage til startskærm - klik på "grupper"-ikonet (nederst på siden)</p>
+						<img src="images/keaapp_prototype_1.png" class="dok_billede_hoej" alt="Kea-app Prototype i papir">
+						<p>Gruppe-side</p>
+						<img src="images/keaapp_prototype_5.png" class="dok_billede_hoej" alt="Kea-app Prototype i papir">
+					</section>
+				</div>
+
+				<div class="row">
+					<section id="ui_ikoner">
+						<h2>UI-ikoner</h2>
+
+						<p>Skitser/optegning af ikoner i Illustrator</p>
+
+						<img src="images/keaapp_ikoner_process.png" class="dok_billede_hoej" alt="Skiter/optegning af ikoner i Illustrator">
+
+					</section>
+				</div>
+
+				<div class="row">
+					<section id="xd_prototype">
+						<h2>XD prototype</h2>
+						<p>Første udgave til test (ikke helt færdig)</p>
+
+						<iframe width="360" height="640" src="https://xd.adobe.com/embed/5322d2ef-a35e-44b4-736b-cce5c2fc28ac-2513/" frameborder="0" allowfullscreen></iframe>
+
+					</section>
+				</div>
+
+				<div class="row">
+					<section id="test_prototype">
+						<h2>Test af prototype</h2>
+
+						<p>Indledende test at den highres DX-prototype (førsteudgaven) er en retrospektiv tænke-højt-test, hvor 3 testpersoner har prøvet den på en android mobil via DX-appen/Creative Cloud, og som jeg efterfølgende har interviewet om deres brugeroplevelse.</p>
+						<p> Dertil kommer de fysiske observationer, som jeg har gjort mig under testen (What/how/why).</p>
+						<p> Testen er en "lightudgave", forstået på den måde, at prototypen ikke er færdig, men da jeg ville gerne have nogle brugbare tilbagemeldinger allerede på nuværende tidspunkt, er den i første omgang er uden video. Testpersonerne er fra både hold A og B.</p>
+
+						<p>Reaktionerne er generelt positive, men der er også forslag til forbedringer. Det var ikke min opfattelse, at der var tøven eller usikkerhed med hensyn til, hvad der skulle klikkes på.</p>
+
+						<p class="fed">De opfølgende spørgsmål er:</p>
+						<ul>
+							<li>Synes du om udformningen/designet af appen?</li>
+							<li>Giver funktionerne mening?</li>
+							<li>Mangler du features?</li>
+							<li>Er der noget, som ikke duer?</li>
+						</ul>
+
+						<p>Post-its med svar</p>
+
+						<img src="images/keaapp_dx_post-its.png" class="dok_billede" alt="DX-protostype test-1 svar">
+
+						<p>Som reaktion på svarene vil jeg arbejde med følgende ændringer:</p>
+						<ul>
+							<li>En tilbage-knap - fx øverst til venstre i headeren</li>
+							<li>En forum-del til appen, hvis det er muligt tidsmæssigt</li>
+							<li>Gennemgå alle knappers wires i DX, så de virker</li>
+							<li>Gentænke ikon for profil, måske en enkelt silhuet, som ved grupperne.</li>
+							<li>Gentænke ikon for admin, "hakket" er måske også tvivlsomt?</li>
+						</ul>
+
+						<p>Egne tillæg</p>
+						<ul>
+							<li>Der er absolut brug for sprogskifte mellem dansk/engelsk, med tanke på de udenlandske studerende</li>
+							<li>Facebook-login</li>
+						</ul>
+
+					</section>
+				</div>
+
+				<div class="row">
+					<section id="pitch">
+						<h2>Pitch-oplæg</h2>
+
+						<p class="fed">Resumé:</p>
+						<p><span class="fed">KEA Groups:</span> App til at danne grupper til opgaver, projekter, m.m.</p>
+						<ul>
+							<li>Profil med KEA-mail - Oprette grupper - søger deltagere - emne & beskrivelse</li>
+							<li>Liste med aktive grupper at joine - Indstillinger - hvilke områder man er interesseret i til match</li>
+							<li>Adskiller sig fra Facebook m.m. ved at den via KEA-profil giver respons fra relevante studerende i klassen/uddannelsesstedet - og ikke hvem man har kontakt til på sociale medier</li>
+							<li>"Nem" mulighed for gruppedannelse... dette kan altid diskuteres!</li>
+						</ul>
+
+						<p class="fed">Problemer - løsninger</p>
+						<ul>
+							<li>Tendens til at vælge de samme personer (samme idéer/kompetencer) App: Nye sammensætninger</li>
+							<li>App: Skabe kontakt til udenlandske studerende - bekymrer sig om det sproglige</li>
+							<li>Interesser for emnet eller fagområdet App: Søgebesskrivelse og stille interesser i profil - match kommer øverst</li>
+							<li>Udviddelsesmuligheder: Forum, Skema, Arrangementer, m.m.</li>
+						</ul>
+
+						<p>Pitch slideshow (fik ikke brug for dette, da jeg viste en gennemgang af appen i stedet.</p>
+
+						<a href="images/pitch.pdf"><img src="images/keaapp_pitch.png" class="dok_billede_hoej" alt="DX-protostype pitch"></a>
+
+						<p>Feedback fra pitch:</p>
+						<ul>
+							<li>Der var rimelig god respons - folk synes om opsætningen/grafik og mener at den har et et professionelt udeende.</li>
+							<li>Overvej om det kan skabe sociale gnidninger/problomer , hvis en request om at joine en gruppe bliver afvist, og om der findes en løsning til at undgå dette.</li>
+							<li>Der skal muligvis filtreringsmuligheder ind ved visningsreultater af grupper, hvis det bliver en lang liste.</li>
+						</ul>
+
+
+					</section>
+				</div>
+
+				<div class="row">
+					<section id="test_2_prototype">
+
+						<h2>DX-prototype 2</h2>
+
+						<p class="fed">Video-test af prototype med testperson via screenrecorder</p>
+
+						<div class="hs-responsive-download-video">
+							<video width="400" controls>
+            <source src="../video/video-test.mp4" type="video/mp4">
+                </video>
+						</div>
+
+						<br>
+
+						<p>Introduktion til testperson: Dette er en app til at danne grupper med på KEA, fx til projekter. Gå ind på den, opret dig som bruger, og kig på de forskellige muligheder og værktøjer til gruppedannelse.</p>
+
+						<p>Efterfølgende interviewer jeg testpersonen omkring brugeroplevelsen</p>
+
+						<p class="fed">Opfølgende interview:</p>
+						<ul>
+							<li>Hvad synes du om udformningen af appen?</li>
+							<li>Er den nem at navigere rundt i?</li>
+							<li>Er der ting, som er forvirrende?</li>
+							<li>Er der noget du savner?</li>
+						</ul>
+
+						<p class="fed">Noter fra interview:</p>
+						<ul>
+							<li>Det ser meget professionelt ud, jeg kunne tro, at det er en rigtig app</li>
+							<li>Den var nem at finde rundt i - der var få knapper at tage stilling til</li>
+							<li>Nem at søge i</li>
+							<li>Layoutet er meget enkelt</li>
+							<li>Måske er det ikke helt klart hvad forskellen er, når med logger på med Facebook?</li>
+							<li>Havde ikke set, at der var sprogskifte til engelsk, men syndes at det er OK i topmenuen</li>
+						</ul>
+
+						<p>På baggrund af testen er prototypeudviklingen afsluttet for denne gang.</p>
+
+					</section>
+				</div>
+
+
+				<div class="row">
+					<section id="praesentation_dx_prototype">
+						<h2>Præsentation af XD-prototype</h2>
+
+						<p class="fed">Endelig DX-prototype:</p>
+
+						<iframe width="360" height="640" src="https://xd.adobe.com/embed/1c409545-1636-4d9b-7bea-a9701f3fcfbf-6a71/" frameborder="0" allowfullscreen></iframe>
+
+					</section>
+				</div>
+
+
+			</article>
+		</main>
+		<!-- Sidens indhold slut -->
+
+		<!-- footer -->
+		<footer>
+			<p>Dette site er lavet som et studieprojekt på kea af Erik Granberg</p>
+		</footer>
+		<!-- footer slut -->
+	</div>
+
+	<!-- Diverse ekstra, du ikke behøver at pille ved -->
+	<script src="js/vendor/modernizr-3.6.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script>
+		window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
+
+	</script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
