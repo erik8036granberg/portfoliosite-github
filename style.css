@@ -288,6 +288,10 @@ main .banner_7 {
 	background-color: #ea5045;
 }
 
+main .banner_8 {
+	background-color: #fbd9e8;
+}
+
 main .opgave {
 	margin: 0;
 	font-weight: bold;
@@ -552,7 +556,6 @@ footer p {
 		padding: 0 2em 2em 0;
 	}
 }
-
 
 /* ===== == = === 64em (1080px) === = == ===== */
 
