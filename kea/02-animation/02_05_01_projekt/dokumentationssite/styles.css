@@ -1,0 +1,327 @@
+body {
+    background-color: #dbd1b4;
+    margin: 0;
+    position: relative;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.33);
+    width: 10vw;
+    height: 24vw;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: roboto, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-family: roboto, sans-serif;
+}
+
+h3 {
+    text-align: center;
+    font-family: roboto, sans-serif;
+}
+
+h4 {
+    text-align: center;
+    font-family: roboto, sans-serif;
+}
+
+p {
+    font-family: 'open-sans', sans-serif;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-right: 25px;
+    font-size: 0.9em;
+    font-family: 'open-sans', sans-serif;
+}
+
+#navbar a:hover {
+    font-size: 1.1em;
+}
+
+/* ------------------------------------ MEDLEMMER STARTER ---------------------------*/
+
+#medlemmer ul li {
+    list-style-type: none;
+}
+
+#medlemmer {
+    border-bottom: 2px solid black;
+    width: 30vw;
+    margin-left: 20px;
+    margin-top: 5vw;
+}
+
+/* ------------------------------------- MEDLEMMER SLUTTER --------------------------*/
+
+/* ------------------------------------- LINK STARTER ---------------------------*/
+
+#link p {
+    margin-left: 40px;
+}
+
+#link {
+    width: 30vw;
+    margin-left: 20px;
+}
+
+/* ------------------------------------- LINK SLUTTER ---------------------------*/
+
+/* -------------------------- BESKRIVELSE AF IDE STARTER  ---------------------------*/
+
+#beskrivelse h2 {
+    width: 30vw;
+    border-top: 2px solid black;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+
+#beskrivelse p {
+    margin-left: 20px;
+    width: 30vw;
+}
+
+/* -------------------------- BESKRIVELSE AF IDE SLUTTER  ---------------------------*/
+
+#flowchart h2 {
+        width: 30vw;
+    border-top: 2px solid black;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+/* ------------------------------ MÅLGRUPPE & PERSONA STARTER ----------------------*/
+
+#målgruppe_og_persona h2 {
+    width: 30vw;
+    border-top: 2px solid black;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+#målgruppe_og_persona h3 {
+    width: 30vw;
+    border-top: 1px solid black;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+#målgruppe_og_persona p {
+    margin-left: 20px;
+    width: 30vw;
+}
+
+#målgruppe_og_persona_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.torben {
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+.camilla {
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+
+/* ------------------------------ MÅLGRUPPE & PERSONA SLUTTER ----------------------*/
+
+/* ------------------------------------ MOODBOARD STARTER ---------------------------*/
+
+#moodboard h2 {
+    border-top: 2px solid black;
+    width: 30vw;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+#moodboard h3 {
+    border-top: 2px solid black;
+    width: 35vw;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+#moodboard_container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.farvepalette {
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+.baggrundseksempel {
+    flex-basis: 600px;
+    flex-grow: 1;
+}
+
+#karakter_container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.karakter1 {
+    flex-basis: 100px;
+}
+
+.karakter1 p {
+    margin-left: 40px;
+}
+
+
+.karakter2 {
+    flex-basis: 600px;
+}
+
+/* ------------------------------------ MOODBOARD SLUTTER ---------------------------*/
+
+/* ------------------------------------ STYLETILE STARTER ---------------------------*/
+
+#styletile h2 {
+    border-top: 2px solid black;
+    width: 30vw;
+    padding-top: 10px;
+    margin-left: 20px;
+}
+
+#styletile h3 {
+    border-top: 1px solid black;
+    width: 20vw;
+    padding-top: 10px;
+}
+
+#styletile_container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.knapper {
+    flex-basis: 200px;
+}
+
+.talebobler {
+    flex-basis: 200px;
+}
+
+/* ------------------------------------ STYLETILE SLUTTER ---------------------------*/
+
+/* ------------------------------------ SKITSER STARTER ---------------------------*/
+
+#skitser h2 {
+    border-top: 2px solid black;
+    width: 30vw;
+    padding-top: 10px;
+    margin-left: 20px;
+}
+
+#skitser_container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.skitsebagfra {
+    flex-basis: 200px;
+}
+
+.skitsekarakter {
+    flex-basis: 200px;
+}
+
+/* ------------------------------------ SKITSER SLUTTER ---------------------------*/
+
+/* ------------------------------------- TRELLOLINK STARTER -------------------------*/
+
+#trellolink a {
+    text-decoration: none;
+    color: black;
+    margin-left: 40px;
+}
+
+#trellolink a:hover {
+    font-size: 1.3em;
+}
+
+#trellolink {
+    border-top: 2px solid black;
+    width: 30vw;
+    margin-left: 20px;
+}
+
+/* ------------------------------------- TRELLOLINK SLUTTER -------------------------*/
+
+#test h2 {
+       border-top: 2px solid black;
+    width: 30vw;
+    padding-top: 10px;
+    margin-left: 20px;
+}
+
+#test p {
+    width: 30vw;
+    margin-left: 20px;
+
+}
+
+
+#burn_container {
+    display: flex;
+}
+
+#burn_down h2 {
+         border-top: 2px solid black;
+    width: 30vw;
+    padding-top: 10px;
+    margin-left: 20px;
+}
+
+#asset h2 {
+        border-top: 2px solid black;
+    width: 30vw;
+    padding-top: 10px;
+    margin-left: 20px;
+}
+
+#sekvensdiagram h2 {
+        border-top: 2px solid black;
+    width: 30vw;
+    padding-top: 10px;
+    margin-left: 20px;
+}
+
+#sekvensdiagram_container {
+    display: flex;
+}
+
+#fotos h2 {
+       border-top: 2px solid black;
+    width: 30vw;
+    padding-top: 10px;
+    margin-left: 20px;
+}

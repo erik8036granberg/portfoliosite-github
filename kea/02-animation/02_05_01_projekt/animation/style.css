@@ -1,0 +1,861 @@
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+
+/*- - - - - scene - - - - - */
+
+#scene {
+	width: 100vw;
+	height: 56.25vw;
+	position: relative;
+	overflow: hidden;
+}
+
+#zoomframe {
+	width: 100vw;
+	height: 56.25vw;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+
+#baggrund {
+	width: 100vw;
+	height: 56.25vw;
+	background-image: url(images/scene_baggrund.svg);
+	background-size: 100%;
+	position: absolute;
+	z-index: 1;
+	pointer-events: none;
+}
+
+#baggrund_2 {
+	width: 100vw;
+	height: 56.25vw;
+	background-image: url(images/scene_baggrund_2.svg);
+	background-size: 100%;
+	position: absolute;
+	z-index: 10;
+	pointer-events: none;
+}
+
+
+#mellemgrund {
+	width: 100vw;
+	height: 56.25vw;
+	background-image: url(images/scene_mellemgrund.svg);
+	background-size: 100%;
+	position: absolute;
+	z-index: 20;
+	pointer-events: none;
+}
+
+#mellemgrund_2 {
+	width: 100vw;
+	height: 56.25vw;
+	background-image: url(images/scene_mellemgrund_2.svg);
+	background-size: 100%;
+	position: absolute;
+	z-index: 35;
+	pointer-events: none;
+}
+
+#forgrund {
+	width: 100vw;
+	height: 56.25vw;
+	background-image: url(images/scene_forgrund.svg);
+	background-size: 100%;
+	position: absolute;
+	z-index: 40;
+	pointer-events: none;
+}
+
+.vis {
+	display: block;
+}
+
+.skjul {
+	display: none;
+}
+
+/*- - - - - scene startBillede - - - - - */
+
+#startbillede {
+	width: 100vw;
+	height: 56.25vw;
+	background-color: #fff;
+	position: absolute;
+	background-image: url(images/startbillede.svg);
+	background-size: 100%;
+	z-index: 40;
+}
+
+#startknap {
+	width: 15vw;
+	height: 5vw;
+	top: 26vw;
+	left: 42.8vw;
+	text-align: center;
+	color: #fff;
+	padding: 1vw;
+	font-size: 3.5vw;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	background-color: #1f2532;
+	position: absolute;
+	z-index: 40;
+	border-radius: 2vw;
+	outline: none;
+}
+
+#startknap:hover {
+	background-color: #ff9207;
+	color: #1f2532;
+}
+
+.puls {
+	animation-name: puls_kf;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+}
+
+@keyframes puls_kf {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(0.9);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.fadeout {
+	animation-name: fadeout_kf;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeout_kf {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+/*- - - - - scene eleverInd - - - - - */
+
+#zara_container {
+	position: absolute;
+	pointer-events: none;
+}
+
+#zara_sprite {
+	width: 30vw;
+	height: 50vw;
+	background-image: url(images/spritesheet_zara.svg);
+	background-size: 100%;
+	position: absolute;
+
+}
+
+.zara_sidder_possition {
+	left: 51vw;
+	top: 5vw;
+	z-index: 15;
+}
+
+.zara_sit {
+	background-position: 0 0;
+}
+
+#brian_container {
+	position: absolute;
+	pointer-events: none;
+}
+
+#brian_sprite {
+	background-image: url(images/spritesheet_brian.svg);
+	width: 30vw;
+	height: 50vw;
+	background-size: 100%;
+}
+
+.brian_move_right {
+	animation-name: brian_move_right_kf;
+	animation-duration: 6s;
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+	animation-timing-function: linear;
+	z-index: 35;
+}
+
+@keyframes brian_move_right_kf {
+	0% {
+		left: -30vw;
+		bottom: -15.5vw;
+	}
+	100% {
+		left: 74vw;
+		bottom: -15.5vw;
+	}
+}
+
+.brian_sidder_possition {
+	left: 74vw;
+	bottom: -15.5vw;
+	z-index: 35;
+}
+
+.brian_stand {
+	background-position: 0 -200%;
+}
+
+.brian_sit {
+	background-position: 0 0;
+}
+
+.brian_front {
+	background-position: 0 -100%;
+}
+
+#anders_container {
+	position: absolute;
+	pointer-events: none;
+}
+
+#anders_sprite {
+	background-image: url(images/spritesheet_anders.svg);
+	width: 33.5vw;
+	height: 55.5vw;
+	background-size: 1200% 300%;
+}
+
+.anders_move_right {
+	z-index: 30;
+	animation-name: anders_move_right_kf;
+	animation-duration: 6s;
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+	animation-timing-function: linear;
+}
+
+@keyframes anders_move_right_kf {
+	0% {
+		left: -50vw;
+		bottom: 0.27vw;
+	}
+
+	100% {
+		left: 16vw;
+		bottom: 0.27vw;
+	}
+}
+
+.anders_walk_cycle {
+	z-index: 30;
+	animation-name: anders_walk_cycle_kf;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: both;
+	animation-timing-function: steps(12);
+}
+
+@keyframes anders_walk_cycle_kf {
+	0% {
+		background-position: 0 100%;
+	}
+	100% {
+		background-position: -1200% 100%;
+	}
+}
+
+.anders_sidder_possition {
+	left: 16vw;
+	bottom: 0.27vw;
+	z-index: 30;
+}
+
+.anders_sit {
+	background-position: 0 0;
+}
+
+.anders_mobil_ryster {
+	left: 16vw;
+	bottom: 0.27vw;
+	animation-name: anders_mobil_ryster_kf;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes anders_mobil_ryster_kf {
+	0% {
+		transform: rotate(0deg);
+	}
+	10% {
+		transform: rotate(-1deg);
+	}
+	20% {
+		transform: rotate(2deg);
+	}
+	30% {
+		transform: rotate(-1deg);
+	}
+	40% {
+		transform: rotate(2deg);
+	}
+	50% {
+		transform: rotate(-1deg);
+	}
+	60% {
+		transform: rotate(2deg);
+	}
+	70% {
+		transform: rotate(-1deg);
+	}
+	80% {
+		transform: rotate(2deg);
+	}
+	90% {
+		transform: rotate(-1deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+/*- - - - - scene mobilFrem - - - - - */
+
+.mobil_frem_zoom {
+	animation-name: mobil_frem_zoom_kf;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes mobil_frem_zoom_kf {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(2.25) translateX(7vw) translateY(3vw);
+	}
+}
+
+.anders_mobil_frame {
+	background-position: -100% 0;
+}
+
+#mobil_container {
+	position: absolute;
+	width: 7.81vw;
+	height: 10.41vw;
+	z-index: 15;
+	transform-origin: center 90%;
+}
+
+#mobil_sprite {
+	width: 7.81vw;
+	height: 10.41vw;
+	top: 0;
+	left: 0;
+	background-image: url(images/arm_med_mobil_spritesheet.svg);
+	background-size: 100% 300%;
+	position: absolute;
+}
+
+.mobil_possition {
+	top: 25.7vw;
+	left: 35.6vw;
+	transform: rotate(-66.6deg);
+}
+
+.sving_mobil_frem {
+	animation-name: sving_mobil_frem_kf;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes sving_mobil_frem_kf {
+	0% {
+		transform: rotate(-66.6deg);
+	}
+	100% {
+		transform: rotate(33.3deg);
+	}
+}
+
+.mobil_besked_zoom {
+	animation-name: mobil_besked_zoom_kf;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes mobil_besked_zoom_kf {
+	0% {
+		transform: scale(2.25) translateX(7vw) translateY(3vw);
+	}
+	100% {
+		transform: scale(12) translateX(8vw) translateY(-1vw);
+	}
+}
+
+.vis_besked {
+	background-position: 0 0;
+}
+
+.vis_billede {
+	background-position: 0 -100%;
+}
+
+/*- - - - - scene VennerVilHa - - - - - */
+
+.venner_vil_ha_zoom {
+	transform: scale(1) translateX(0) translateY(0);
+}
+
+#baggrund_side {
+	width: 100vw;
+	height: 56.5vw;
+	background-image: url(images/scene_baggrund_side.svg);
+	background-size: 100%;
+	position: absolute;
+	z-index: 50;
+	pointer-events: none;
+}
+
+.zara_vil_ha_possition {
+	z-index: 55;
+	left: -50vw;
+	top: 0vw;
+	transform: scale(3) translateX(-6vw) translateY(-9.5vw);
+}
+
+.zara_front {
+	background-position: 0 -100%;
+}
+
+.brian_vil_ha_possition {
+	z-index: 55;
+	left: 50vw;
+	top: 0vw;
+	transform: scale(1.75) translateX(35vw) translateY(12vw);
+}
+
+.brian_front {
+	background-position: 0 -100%;
+}
+
+.zara_slide {
+	animation-name: zara_slide_kf;
+	animation-duration: 1.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes zara_slide_kf {
+	0% {
+		left: -50vw;
+	}
+	40% {
+		left: -0vw;
+	}
+	45% {
+		left: -3vw;
+	}
+	50% {
+		left: 0vw;
+	}
+	55% {
+		left: -1.5vw;
+	}
+	60% {
+		left: 0vw;
+	}
+	100% {
+		left: 0vw;
+	}
+}
+
+.brian_slide {
+	animation-name: brian_slide_kf;
+	animation-duration: 1.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes brian_slide_kf {
+	0% {
+		left: 50vw;
+	}
+	50% {
+		left: 50vw;
+	}
+	80% {
+		left: 0vw;
+	}
+	85% {
+		left: 3vw;
+	}
+	90% {
+		left: 0vw;
+	}
+	95% {
+		left: 1vw;
+	}
+	97% {
+		left: 0vw;
+	}
+	99% {
+		left: 0.5vw;
+	}
+	100% {
+		left: 0vw;
+	}
+}
+
+#send_til_mig {
+	width: 10.41vw;
+	height: 7.81vw;
+	background-image: url(images/send_til_mig.svg);
+	background-size: 100%;
+	position: absolute;
+	pointer-events: none;
+}
+
+.send_til_mig_vis {
+	top: 20vw;
+	left: 38vw;
+	transform: scale(3);
+	z-index: 60;
+	animation-name: send_til_mig_vis_kf;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes send_til_mig_vis_kf {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+#ogsaa_til_mig {
+	width: 10.41vw;
+	height: 7.81vw;
+	background-image: url(images/ogsaa_til_mig.svg);
+	background-size: 100%;
+	position: absolute;
+	pointer-events: none;
+}
+
+.ogsaa_til_mig_vis {
+	top: 23vw;
+	left: 47vw;
+	transform: scale(3);
+	z-index: 60;
+	animation-name: ogsaa_til_mig_vis_kf;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes ogsaa_til_mig_vis_kf {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+/*- - - - - scene mobilvalg - - - - - */
+
+.vis_nedtonet_mobil {
+	background-position: 0 -200%;
+}
+
+.gem_knap_placering {
+	width: 10vw;
+	height: 10vw;
+	background-image: url(images/gemknap.svg);
+	background-size: 100%;
+	position: absolute;
+	z-index: 60;
+	top: 19.2vw;
+	left: 43.9vw;
+	outline: none;
+}
+
+.gem_knap_placering:hover {
+	background-image: url(images/gemknap_hover.svg);
+}
+
+.del_knap_placering {
+	width: 10vw;
+	height: 10vw;
+	background-image: url(images/delknap.svg);
+	background-size: 100%;
+	position: absolute;
+	z-index: 60;
+	top: 22vw;
+	left: 55.5vw;
+	outline: none;
+}
+
+.del_knap_placering:hover {
+	background-image: url(images/delknap_hover.svg);
+}
+
+.knappuls {
+	animation-name: knappuls_kf;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+}
+
+@keyframes knappuls_kf {
+	0% {
+		transform: scale(1) rotate(13deg);
+	}
+	50% {
+		transform: scale(0.9) rotate(13deg);
+	}
+	100% {
+		transform: scale(1) rotate(13deg);
+	}
+}
+
+/*- - - - - scene konsekvens gem & del - - - - - */
+
+.baggrund_flip {
+	transform: scaleX(-1);
+}
+
+.anders_konsekvens_possition {
+	left: 13vw;
+	bottom: -19vw;
+	z-index: 60;
+	transform: scale(2.8) scaleX(-1);
+}
+
+.anders_front {
+	background-position: 0 -100%;
+}
+
+.anders_gem {
+	background-position: -100% -100%;
+}
+
+.anders_del {
+	background-position: -200% -100%;
+}
+
+#konsekvens_gem_wrapper {
+	width: 40vw;
+	height: 33vw;
+	top: 7vw;
+	left: 45vw;
+	font-size: 4.5vw;
+	font-family: 'Open Sans', sans-serif;
+	position: absolute;
+	z-index: 40;
+	background-color: #fff;
+	padding: 5vw;
+	border-radius: 10vw;
+}
+
+#konsekvens_gem_wrapper .rubrik {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#konsekvens_gem_wrapper .text {
+	font-size: 3vw;
+	padding-top: 2vw;
+	font-weight: normal;
+}
+
+#konsekvens_del_wrapper {
+	width: 40vw;
+	height: 33vw;
+	top: 7vw;
+	left: 45vw;
+	font-size: 4.5vw;
+	font-family: 'Open Sans', sans-serif;
+	position: absolute;
+	z-index: 40;
+	background-color: #fff;
+	padding: 5vw;
+	border-radius: 10vw;
+}
+
+#konsekvens_del_wrapper .rubrik {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#konsekvens_del_wrapper .text {
+	font-size: 3vw;
+	padding-top: 2vw;
+	font-weight: normal;
+}
+
+.konsekvens_grow {
+	animation-name: konsekvens_grow_kf;
+	animation-duration: 4s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes konsekvens_grow_kf {
+	0% {
+		transform: scale(0.6);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+/*- - - - - scene privatsnak - - - - - */
+
+#privatsnak {
+	width: 100vw;
+	height: 56.5vw;
+	background-color: #1f2532;
+	background-size: 100%;
+	position: absolute;
+	z-index: 70;
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+}
+
+#privatsnak .rubrik {
+	position: absolute;
+	top: 19vw;
+	left: 20vw;
+	font-size: 3.75vw;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#privatsnak .text {
+	position: absolute;
+	top: 23vw;
+	left: 20vw;
+	font-size: 1.75vw;
+	padding-top: 2vw;
+	font-weight: normal;
+}
+
+.privatsnak_slide {
+	top: -60vw;
+	left: 0;
+	animation-name: privatsnak_slide_kf;
+	animation-duration: 2s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes privatsnak_slide_kf {
+	0% {
+		top: -60vw;
+	}
+	100% {
+		top: 0;
+	}
+}
+
+#privatsnak_logo {
+	width: 13.43vw;
+	height: 9.73vw;
+	top: 7vw;
+	left: 17.5vw;
+	background-image: url(images/logo-privatsnak.png);
+	background-size: 100%;
+	position: absolute;
+	pointer-events: none;
+}
+
+#privatsnak_logo:hover {
+	transform: scale(1.2);
+}
+
+#sexsamfund_logo {
+	width: 5.20vw;
+	height: 10.41vw;
+	bottom: 5vw;
+	right: 4vw;
+	background-image: url(images/logo-sexogsamfund.png);
+	background-size: 100%;
+	position: absolute;
+	pointer-events: none;
+}
+
+a {
+	color: #3b759f;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:link {
+	color: #ff9207;
+}
+
+a:visited {
+	color: #ff9207;
+}
+
+a:hover {
+	color: #fff;
+}
+
+a:active {
+	color: #fff;
+}

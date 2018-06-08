@@ -111,6 +111,11 @@ a:visited {
 	background-color: #b5b5b5;
 }
 
+.theme_dark {
+	background-color: #222;
+	color: #fff;
+}
+
 .theme_black {
 	background-color: #000;
 	color: #fff;
@@ -234,7 +239,6 @@ nav li.nav_back:hover {
 	padding-left: 1.75em;
 	height: 1.4em;
 }
-
 
 .nobreak {
 	white-space: nowrap;
@@ -378,7 +382,21 @@ main .lydinfo {
 	flex-basis: 20em;
 	flex-grow: 1;
 	padding: 2em 1em 1em 0;
+}
 
+.imagewrapper {
+	background-color: #fff;
+	line-height: 0;
+	overflow: hidden;
+}
+
+.imagewrapper img {
+	transition: transform .2s;
+	/* Animation */
+}
+
+.imagewrapper img:hover {
+	transform: scale(1.2);
 }
 
 footer {
