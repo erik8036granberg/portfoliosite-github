@@ -1,5 +1,5 @@
 * {
-	box-sizing: border-box
+	box-sizing: border-box;
 }
 
 img {
@@ -32,28 +32,28 @@ body {
 }
 
 h1 {
-	font-family: 'Open sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
 	text-transform: uppercase;
 	font-size: 2em;
 }
 
 h2 {
-	font-family: 'Open sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
 	text-transform: uppercase;
 	font-size: 1.5em;
 }
 
 h3 {
-	font-family: 'Open sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
 	text-transform: uppercase;
 	font-size: 1.2em;
 }
 
 h4 {
-	font-family: 'Open sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
 	text-transform: uppercase;
 	font-size: 1em;
@@ -142,7 +142,7 @@ header h1 {
 }
 
 header h2 {
-	font-family: 'Open sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	color: #fff;
 	font-size: 0.8em;
 	font-weight: normal;
@@ -170,9 +170,8 @@ nav ul {
 }
 
 nav li {
-	font-family: 'Open sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	flex-wrap: wrap;
-	flex-basis: 100%;
 	margin: 0 2em 1em 0;
 	font-size: 0.9em;
 	text-transform: uppercase;
@@ -301,9 +300,11 @@ main .opgave {
 	font-weight: bold;
 }
 
+/*
 main .pdf_link {
 	max-width: auto;
 }
+*/
 
 main a img:hover {
 	opacity: 0.5;
@@ -400,7 +401,7 @@ main .lydinfo {
 }
 
 footer {
-	font-family: "open sans";
+	font-family: 'Open Sans', sans-serif;
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 1em;
@@ -607,7 +608,7 @@ footer p {
 
 	.banner_wrapper {
 		width: 64em;
-		padding: 0 6em 0 0;
+		padding: 0 6em 0 7em;
 	}
 
 	header h1 {
