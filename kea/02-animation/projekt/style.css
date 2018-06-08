@@ -1,0 +1,2232 @@
+/* diverse */
+
+body {
+	margin: 0 0 50px;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.skjuloverflow {
+	overflow: hidden;
+}
+
+.wrapper {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.wrapper img {
+	max-width: 720px;
+}
+
+h3 {
+	margin-bottom: 0;
+}
+
+
+/* fonts */
+
+@font-face {
+	font-family: 'playbillregular';
+	src: url('fonts/playbill/playbill-webfont.woff2') format('woff2'),
+	url('fonts/playbill/playbill-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'arial_rounded_mt_boldbold';
+	src: url('fonts/arial_rounded/arlrdbd-webfont.woff2') format('woff2'),
+	url('fonts/arial_rounded/arlrdbd-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+/* søm-måtte */
+
+#soemmaatte_knapper {
+	width: 100vw;
+	height: 2vw;
+	position: absolute;
+	z-index: 200;
+}
+
+/* - - - - - - - scene og baggrund  - - - - - - - - */
+
+#scene {
+	width: 100vw;
+	height: 56.25vw;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+
+#baggrund_buske {
+	width: 100vw;
+	height: 56.25vw;
+	background-image: url(images/baggrund_buske.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 40;
+	pointer-events: none;
+}
+
+
+#baggrund_trae {
+	width: 100vw;
+	height: 56.25vw;
+	background-image: url(images/baggrund_trae.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 30;
+	pointer-events: none;
+}
+
+#baggrund_mark {
+	width: 100vw;
+	height: 56.25vw;
+	background-image: url(images/baggrund_mark.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 20;
+	pointer-events: none;
+}
+
+#baggrund_bjerge {
+	width: 100vw;
+	height: 56.25vw;
+	background-image: url(images/baggrund_bjerge.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	pointer-events: none;
+}
+
+/* sten */
+
+#sten {
+	width: 3.64vw;
+	height: 3.64vw;
+	background-image: url(images/sten.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 48vw;
+	left: 26vw;
+	z-index: 35;
+}
+
+/* røg fra skorsten */
+
+#roeg {
+	width: 32.29vw;
+	height: 9.21vw;
+	background-image: url(images/roeg.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: -1vw;
+	left: 72vw;
+	z-index: 10;
+	animation-name: roeg_kf;
+	transform-origin: bottom left;
+	animation-duration: 25s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	opacity: 0;
+}
+
+#roeg_2 {
+	width: 32.29vw;
+	height: 9.21vw;
+	background-image: url(images/roeg_2.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: -1vw;
+	left: 72vw;
+	z-index: 10;
+	animation-name: roeg_2_kf;
+	transform-origin: bottom left;
+	animation-duration: 25s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	opacity: 0;
+}
+
+/* Røg "animation" */
+
+@keyframes roeg_kf {
+	0% {
+		opacity: 0;
+		transform: rotate(0deg) scaleX(1)
+	}
+
+	25% {
+		opacity: 0.7;
+		transform: rotate(-8deg) scaleX(1.2)
+	}
+	50% {
+		opacity: 0.5;
+		transform: rotate(0deg) scaleX(1.5)
+	}
+	75% {
+		opacity: 0.5;
+		transform: rotate(-2deg) scaleX(1.7)
+	}
+	85% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 0;
+		transform: rotate(0deg) scaleX(2)
+	}
+}
+
+@keyframes roeg_2_kf {
+	0% {
+		opacity: 0;
+		transform: rotate(0deg) scaleX(1)
+	}
+	15% {
+		opacity: 1;
+	}
+
+	25% {
+		opacity: 1;
+		transform: rotate(-3deg) scaleX(1.5)
+	}
+	50% {
+		opacity: 1;
+		transform: rotate(0deg) scaleX(2)
+	}
+	75% {
+		opacity: 1;
+		transform: rotate(0deg) scaleX(2.5)
+	}
+	85% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: rotate(0deg) scaleX(3)
+	}
+}
+
+/* - - - - - - - figurer - - - - - - - - */
+
+/* kanin container */
+
+#kanin_container {
+	position: absolute;
+	width: 26.04vw;
+	height: 28.64vw;
+	pointer-events: none;
+}
+
+/* kanin sprite */
+
+#kanin_sprite {
+	width: 26.04vw;
+	height: 28.64vw;
+	background-image: url(images/kaninspritesheet.svg);
+	background-size: 1200% 800%;
+	pointer-events: none;
+}
+
+/* jæger container */
+
+#jaeger_container {
+	position: absolute;
+	width: 26.04vw;
+	height: 31.25vw;
+}
+
+/* jæger sprite */
+
+#jaeger_sprite {
+	width: 26.04vw;
+	height: 31.25vw;
+	background-image: url(images/jaegerspritesheet.svg);
+	background-size: 1400% 600%;
+}
+
+/* - - - - - - - scene: startskaerm - - - - - - - - */
+
+#start_skilt {
+	width: 57.81vw;
+	height: 39.06vw;
+	top: 3.77vw;
+	left: 20.31vw;
+	background-image: url(images/start_skilt.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 145;
+}
+
+#start_knap {
+	width: 18.22vw;
+	height: 7.81vw;
+	top: 30vw;
+	left: 20.5vw;
+	background-image: url(images/start_knap.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 55;
+	animation-name: start_knap_blink_kf;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
+	z-index: 150;
+}
+
+/* start_knap animation */
+
+@keyframes start_knap_blink_kf {
+	0% {
+		transform: scale(0.8)
+	}
+	35% {
+		transform: scale(0.9)
+	}
+	45% {
+		transform: scale(0.7)
+	}
+	50% {
+		transform: scale(0.8)
+	}
+	100% {
+		transform: scale(0.8)
+	}
+}
+
+#start_knap:hover {
+	background-image: url(images/start_knap_hover.svg);
+	transition: background-image 0.75s;
+}
+
+#nedtoning {
+	width: 100vw;
+	height: 56.25vw;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	position: absolute;
+	z-index: 45;
+	opacity: 0.85;
+	z-index: 140;
+}
+
+.skjult {
+	display: none;
+}
+
+.synlig {
+	display: block;
+}
+
+/* jæger sidder på kasse (container) */
+
+.jaeger_sidder {
+	top: 12vw;
+	left: 67.5vw;
+	z-index: 50;
+}
+
+/* jæger sidder stille (sprite) */
+
+.jaeger_sidder_stille {
+	background-position: 0 0;
+}
+
+
+/* - - - - - - - scene: kanin_hop_ind - - - - - - - - */
+
+/* kanin ind (container) */
+
+.kanin_ind_fra_siden {
+	top: 17vw;
+	left: 1vw;
+	z-index: 35;
+	animation-name: kanin_ind_fra_siden_kf;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+}
+
+@keyframes kanin_ind_fra_siden_kf {
+	0% {
+		top: 10vw;
+		left: -18vw;
+	}
+	18% {
+		top: 17vw;
+		left: -18vw;
+	}
+	50% {
+		top: 17vw;
+		left: -8vw;
+	}
+	65% {
+		top: 17vw;
+		left: -8vw;
+	}
+	85% {
+		top: 17vw;
+		left: 1vw;
+	}
+
+	100% {
+		top: 17vw;
+		left: 1vw;
+	}
+}
+
+
+/* kanin hopper ind - (sprite) */
+
+.kanin_hop_fremad {
+	animation-name: kanin_hop_fremad_kf;
+	animation-duration: 1s;
+	animation-timing-function: steps(12);
+	animation-iteration-count: 2;
+	animation-fill-mode: forwards;
+}
+
+@keyframes kanin_hop_fremad_kf {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: -1200% 0;
+	}
+}
+
+
+
+/* - - - - - - - scene: jaeger_drikker - - - - - - - - */
+
+/* kanin position bag træ - (container) */
+
+.kanin_bag_trae {
+	top: 17vw;
+	left: 1vw;
+	z-index: 35;
+}
+
+/* kanin stilbillede - (sprite) */
+
+.kanin_staar {
+	background-position: 0 0;
+}
+
+
+/* jæger drikker af flaske (sprite) */
+
+.jaeger_drikker {
+	animation-name: jaeger_drikker_kf;
+	animation-duration: 2s;
+	animation-timing-function: steps(14);
+	animation-iteration-count: 3;
+	animation-fill-mode: forwards;
+}
+
+@keyframes jaeger_drikker_kf {
+	0% {
+		background-position: 0% 0%;
+	}
+	100% {
+		background-position: -1400% 0%;
+	}
+}
+
+/* - - - - - - - scene: jaeger_falder_i_soevn - - - - - - - - */
+
+/* jæger falder i søvn (sprite) */
+
+.jaeger_falder_i_soevn {
+	animation-name: jaeger_falder_i_soevn_kf;
+	animation-duration: 2s;
+	animation-timing-function: steps(10);
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes jaeger_falder_i_soevn_kf {
+	0% {
+		background-position: 0% -100%;
+	}
+	100% {
+		background-position: -1000% -100%;
+	}
+}
+
+/* - - - - - - - scene: jaeger_sover - - - - - - - - */
+
+/* jæger sover (sprite) */
+
+.jaeger_sover {
+	animation-name: jaeger_sover_kf;
+	animation-duration: 2s;
+	animation-timing-function: steps(10);
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+}
+
+@keyframes jaeger_sover_kf {
+	0% {
+		background-position: 0% -200%;
+	}
+	100% {
+		background-position: -1000% -200%;
+	}
+}
+
+/* kanin blinker med øjnene (sprite) */
+
+.kanin_blinker {
+	animation-name: kanin_blinker_kf;
+	animation-duration: 2s;
+	animation-timing-function: steps(8);
+	animation-iteration-count: 2;
+}
+
+@keyframes kanin_blinker_kf {
+	0% {
+		background-position: 0% -300%;
+	}
+	100% {
+		background-position: -800% -300%;
+	}
+}
+
+/* - - - - - - - scene: taktikvalg - - - - - - - - */
+
+#taktikvalg_skilt {
+	width: 57.81vw;
+	height: 39.06vw;
+	top: 3.77vw;
+	left: 20.31vw;
+	padding: 7vw 10vw;
+	background-image: url(images/taktikvalg_skilt.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 145;
+}
+
+.taktikvalg_rubrik {
+	font-family: 'playbillregular';
+	font-size: 6.5vw;
+	text-transform: uppercase;
+	white-space: nowrap;
+	color: #42210b;
+	padding: 0 0 2vw;
+}
+
+.taktikvalg_wrapper {
+	display: flex;
+	margin: 0 0 2vw;
+}
+
+#taktikvalg_knap_a {
+	min-width: 6.51vw;
+	height: 5.98vw;
+	background-image: url(images/taktikvalg_knap_a.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+#taktikvalg_knap_a:hover {
+	background-image: url(images/taktikvalg_knap_a_hover.svg);
+	transition: background-image 0.75s;
+}
+
+#taktikvalg_knap_b {
+	min-width: 6.51vw;
+	height: 5.98vw;
+	background-image: url(images/taktikvalg_knap_b.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+#taktikvalg_knap_b:hover {
+	background-image: url(images/taktikvalg_knap_b_hover.svg);
+	transition: background-image 0.75s;
+}
+
+.taktikvalg_tekst {
+	font-family: 'arial_rounded_mt_boldbold';
+	font-size: 2vw;
+	color: #000;
+	padding-left: 1vw;
+}
+
+#taktikvalg_tekst_a:hover,
+#taktikvalg_tekst_b:hover {
+	color: #fff;
+	transition: color 0.75s;
+}
+
+/* - - - - - - - scene: kanin_hopper_frem - - - - - - - - */
+
+/* kanin hopper til højre (container) */
+
+.kanin_et_hop_til_hoejre {
+	top: 17vw;
+	left: 1vw;
+	z-index: 35;
+	animation-name: kanin_et_hop_til_hoejre_kf;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+}
+
+@keyframes kanin_et_hop_til_hoejre_kf {
+	0% {
+		top: 17vw;
+		left: 1vw;
+	}
+	70% {
+		top: 20vw;
+		left: 4vw;
+	}
+	100% {
+		top: 23.5vw;
+		left: 6vw;
+	}
+}
+
+/* kaninen drejer i luften imens (sprite) */
+
+.kanin_drej_i_luften {
+	animation-name: kanin_drej_i_luften_kf;
+	animation-duration: 1s;
+	animation-timing-function: steps(12);
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes kanin_drej_i_luften_kf {
+	0% {
+		background-position: 0 -200%;
+	}
+	100% {
+		background-position: -1200% -200%;
+	}
+}
+
+/* - - - - - - - scene: kanin_staar_mod_marken - - - - - - - - */
+
+/* kanin vender mod marken - (container) */
+
+.kanin_mark_possition {
+	top: 23.5vw;
+	left: 6vw;
+	z-index: 50;
+}
+
+/* kanin vender mod marken - (sprite) */
+
+.kanin_ryg_til {
+	background-position: 0 -100%;
+}
+
+
+/* - - - - - - - scene: kanin_mark_hop_1 - - - - - - - - */
+
+/* kanin_mark_hop_1 (container) */
+
+.kanin_mark_move_1 {
+	z-index: 50;
+	animation-name: kanin_mark_hop_1_kf;
+	animation-duration: 1.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+}
+
+@keyframes kanin_mark_hop_1_kf {
+	0% {
+		top: 23.5vw;
+		left: 6vw;
+	}
+	25% {
+		top: 23.5vw;
+		left: 6vw;
+	}
+	60% {
+		top: 19vw;
+		left: 13vw;
+	}
+	100% {
+		top: 19vw;
+		left: 13vw;
+	}
+}
+
+.kanin_mark_possition_1 {
+	top: 19vw;
+	left: 13vw;
+	z-index: 50;
+}
+
+
+/* kanin hopper hen over marken (sprite) */
+
+.kanin_mark_hop {
+	animation-name: kanin_mark_hop_kf;
+	animation-duration: 1.5s;
+	animation-timing-function: steps(12);
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes kanin_mark_hop_kf {
+	0% {
+		background-position: 0 -100%;
+	}
+	100% {
+		background-position: -1200% -100%;
+	}
+}
+
+/* - - - - - - - scene: kanin_mark_hop_2 - - - - - - - - */
+
+/* kanin_mark_move_2 (container) */
+
+.kanin_mark_move_2 {
+	animation-name: kanin_mark_move_2_kf;
+	animation-duration: 1.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+}
+
+@keyframes kanin_mark_move_2_kf {
+	0% {
+		top: 19vw;
+		left: 13vw;
+		z-index: 50;
+	}
+	25% {
+		top: 19vw;
+		left: 13vw;
+		z-index: 50;
+	}
+	60% {
+		top: 20vw;
+		left: 20vw;
+		z-index: 25;
+	}
+	100% {
+		top: 20vw;
+		left: 20vw;
+		z-index: 25;
+	}
+}
+
+/* kanin hopper hen over marken (sprite) */
+
+.kanin_mark_hop_2 {
+	animation-name: kanin_mark_hop_2_kf;
+	animation-duration: 1.5s;
+	animation-timing-function: steps(12);
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes kanin_mark_hop_2_kf {
+	0% {
+		background-position: 0 -100%;
+	}
+	100% {
+		background-position: -1200% -100%;
+	}
+}
+
+.kanin_mark_possition_2 {
+	top: 20vw;
+	left: 20vw;
+	z-index: 25;
+}
+
+/* - - - - - - - scene: kanin_mark_hop_3 - - - - - - - - */
+
+/* kanin_mark_move_3 (container) */
+
+.kanin_mark_move_3 {
+	z-index: 25;
+	animation-name: kanin_mark_move_3_kf;
+	animation-duration: 1.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+}
+
+@keyframes kanin_mark_move_3_kf {
+	0% {
+		top: 20vw;
+		left: 20vw;
+		z-index: 25;
+	}
+	25% {
+		top: 20vw;
+		left: 20vw;
+		z-index: 25;
+	}
+	60% {
+		top: 23vw;
+		left: 22vw;
+		z-index: 25;
+		transform: scale(0.8);
+	}
+	100% {
+		top: 23vw;
+		left: 22vw;
+		z-index: 25;
+		transform: scale(0.8);
+	}
+}
+
+/* kanin hopper hen over marken (sprite) */
+
+.kanin_mark_hop_3 {
+	animation-name: kanin_mark_hop_3_kf;
+	animation-duration: 1.5s;
+	animation-timing-function: steps(12);
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes kanin_mark_hop_3_kf {
+	0% {
+		background-position: 0 -100%;
+	}
+	100% {
+		background-position: -1200% -100%;
+	}
+}
+
+.kanin_mark_possition_3 {
+	top: 23vw;
+	left: 22vw;
+	z-index: 25;
+	transform: scale(0.8);
+}
+
+/* - - - - - - - scene: kanin_mark_hop_4 - - - - - - - - */
+
+/* kanin_mark_move_4 (container) */
+
+.kanin_mark_move_4 {
+	z-index: 25;
+	animation-name: kanin_mark_move_4_kf;
+	animation-duration: 1.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+}
+
+@keyframes kanin_mark_move_4_kf {
+	0% {
+		top: 23vw;
+		left: 22vw;
+		z-index: 25;
+		transform: scale(0.8);
+	}
+	25% {
+		top: 23vw;
+		left: 22vw;
+		z-index: 25;
+		transform: scale(0.8);
+	}
+	60% {
+		top: 20vw;
+		left: 20vw;
+		z-index: 25;
+		transform: scale(0.75);
+	}
+	100% {
+		top: 20vw;
+		left: 20vw;
+		z-index: 25;
+		transform: scale(0.75);
+	}
+}
+
+/* kanin hopper hen over marken (sprite) */
+
+.kanin_mark_hop_4 {
+	animation-name: kanin_mark_hop_4_kf;
+	animation-duration: 1.5s;
+	animation-timing-function: steps(12);
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes kanin_mark_hop_4_kf {
+	0% {
+		background-position: 0 -100%;
+	}
+	100% {
+		background-position: -1200% -100%;
+	}
+}
+
+.kanin_mark_possition_4 {
+	top: 20vw;
+	left: 20vw;
+	z-index: 25;
+	transform: scale(0.75);
+}
+
+/* - - - - - - - scene: kanin_mark_hop_5 - - - - - - - - */
+
+/* kanin_mark_move_5 (container) */
+
+.kanin_mark_move_5 {
+	z-index: 25;
+	animation-name: kanin_mark_move_5_kf;
+	animation-duration: 1.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+}
+
+@keyframes kanin_mark_move_5_kf {
+	0% {
+		top: 20vw;
+		left: 20vw;
+		z-index: 25;
+		transform: scale(0.75);
+	}
+	25% {
+		top: 20vw;
+		left: 20vw;
+		z-index: 25;
+		transform: scale(0.75);
+	}
+	60% {
+		top: 13vw;
+		left: 18vw;
+		z-index: 25;
+		transform: scale(0.73);
+	}
+	100% {
+		top: 13vw;
+		left: 18vw;
+		z-index: 25;
+		transform: scale(0.73);
+	}
+}
+
+/* kanin hopper hen over marken (sprite) */
+
+.kanin_mark_hop_5 {
+	animation-name: kanin_mark_hop_5_kf;
+	animation-duration: 1.5s;
+	animation-timing-function: steps(12);
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes kanin_mark_hop_5_kf {
+	0% {
+		background-position: 0 -100%;
+	}
+	100% {
+		background-position: -1200% -100%;
+	}
+}
+
+.kanin_mark_possition_5 {
+	top: 13vw;
+	left: 18vw;
+	z-index: 25;
+	transform: scale(0.73);
+}
+
+/* - - - - - - - scene: kanin_mark_hop_5 - - - - - - - - */
+
+/* kanin_mark_move_5 (container) */
+
+.kanin_mark_move_6 {
+	z-index: 25;
+	animation-name: kanin_mark_move_6_kf;
+	animation-duration: 1.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+}
+
+@keyframes kanin_mark_move_6_kf {
+	0% {
+		top: 13vw;
+		left: 18vw;
+		z-index: 25;
+		transform: scale(0.75);
+	}
+	25% {
+		top: 13vw;
+		left: 18vw;
+		z-index: 25;
+		transform: scale(0.75);
+	}
+	60% {
+		top: 11.5vw;
+		left: 21vw;
+		z-index: 25;
+		transform: scale(0.72);
+	}
+	100% {
+		top: 11.5vw;
+		left: 21vw;
+		z-index: 25;
+		transform: scale(0.72);
+	}
+}
+
+/* kanin hopper hen over marken (sprite) */
+
+.kanin_mark_hop_6 {
+	animation-name: kanin_mark_hop_6_kf;
+	animation-duration: 1.5s;
+	animation-timing-function: steps(12);
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes kanin_mark_hop_6_kf {
+	0% {
+		background-position: 0 -100%;
+	}
+	100% {
+		background-position: -1200% -100%;
+	}
+}
+
+.kanin_mark_possition_6 {
+	top: 11.5vw;
+	left: 21vw;
+	z-index: 25;
+	transform: scale(0.72);
+}
+
+/* - - - - - - - scene: Kanin Mobil ryster - - - - - - - - */
+
+/*kanin_mobil_position (container) */
+
+.kanin_mobil_possition {
+	top: 11.5vw;
+	left: 21vw;
+	z-index: 25;
+}
+
+/*kanin_mobil_Størrelse (sprite) */
+
+.kanin_mobil_size {
+	transform: scale(0.72);
+}
+
+.kanin_mobil_ryster {
+	top: 11.5vw;
+	left: 21vw;
+	z-index: 25;
+	z-index: 50;
+	animation-name: kanin_mobil_ryster_kf;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes kanin_mobil_ryster_kf {
+	0% {
+		transform: rotate(0deg);
+	}
+	5% {
+		transform: rotate(10deg);
+	}
+	10% {
+		transform: rotate(-15deg);
+	}
+	15% {
+		transform: rotate(10deg);
+	}
+	20% {
+		transform: rotate(-15deg);
+	}
+	25% {
+		transform: rotate(20deg);
+	}
+	30% {
+		transform: rotate(-10deg);
+	}
+	35% {
+		transform: rotate(10deg);
+	}
+	40% {
+		transform: rotate(12deg);
+	}
+	45% {
+		transform: rotate(-10deg);
+	}
+	50% {
+		transform: rotate(3deg);
+	}
+	55% {
+		transform: rotate(0deg);
+	}
+	60% {
+		transform: rotate(10deg);
+	}
+	65% {
+		transform: rotate(-15deg);
+	}
+	70% {
+		transform: rotate(10deg);
+	}
+	74% {
+		transform: rotate(-15deg);
+	}
+	78% {
+		transform: rotate(20deg);
+	}
+	82% {
+		transform: rotate(-10deg);
+	}
+	86% {
+		transform: rotate(10deg);
+	}
+	88% {
+		transform: rotate(12deg);
+	}
+	92% {
+		transform: rotate(-10deg);
+	}
+	95% {
+		transform: rotate(2deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+
+/* - - - - - - - scene: Kanin Mobil ryster 2 - - - - - - - - */
+
+/*kanin_mobil_ryster_2 (conatiner) */
+
+.kanin_mobil_ryster_2 {
+	top: 11.5vw;
+	left: 21vw;
+	z-index: 25;
+	z-index: 50;
+	animation-name: kanin_mobil_ryster_2_kf;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes kanin_mobil_ryster_2_kf {
+	0% {
+		transform: rotate(0deg);
+	}
+	5% {
+		transform: rotate(10deg);
+	}
+	10% {
+		transform: rotate(-15deg);
+	}
+	15% {
+		transform: rotate(10deg);
+	}
+	20% {
+		transform: rotate(-15deg);
+	}
+	25% {
+		transform: rotate(20deg);
+	}
+	30% {
+		transform: rotate(-10deg);
+	}
+	35% {
+		transform: rotate(10deg);
+	}
+	40% {
+		transform: rotate(12deg);
+	}
+	45% {
+		transform: rotate(-10deg);
+	}
+	50% {
+		transform: rotate(3deg);
+	}
+	55% {
+		transform: rotate(0deg);
+	}
+	60% {
+		transform: rotate(10deg);
+	}
+	65% {
+		transform: rotate(-15deg);
+	}
+	70% {
+		transform: rotate(10deg);
+	}
+	74% {
+		transform: rotate(-15deg);
+	}
+	78% {
+		transform: rotate(20deg);
+	}
+	82% {
+		transform: rotate(-10deg);
+	}
+	86% {
+		transform: rotate(10deg);
+	}
+	88% {
+		transform: rotate(12deg);
+	}
+	92% {
+		transform: rotate(-10deg);
+	}
+	95% {
+		transform: rotate(2deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+/* kanin bange - (sprite) */
+
+.kanin_bange {
+	animation-name: kanin_bange_kf;
+	animation-duration: 3s;
+	animation-timing-function: steps(5);
+	animation-iteration-count: 2;
+	animation-fill-mode: forwards;
+}
+
+@keyframes kanin_bange_kf {
+	0% {
+		background-position: 0 -500%;
+	}
+	100% {
+		background-position: -500% -500%;
+	}
+}
+
+/* jæger vågner (sprite) */
+
+.jaeger_vaagner {
+	animation-name: jaeger_vaagner_kf;
+	animation-duration: 2s;
+	animation-timing-function: steps(10);
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-direction: reverse;
+}
+
+@keyframes jaeger_vaagner_kf {
+	0% {
+		background-position: 0 -100%;
+	}
+	100% {
+		background-position: -1000% -100%;
+	}
+}
+
+/* - - - - - - - scene: mmobilRygerFrem - - - - - - - - */
+
+/* jæger sur (sprite) */
+
+.jaeger_sur {
+	background-position: 0 -300%;
+}
+
+/* jæger skyder (sprite) */
+
+#mobil_container {
+	position: absolute;
+	width: 6.51vw;
+	height: 3.90vw;
+
+}
+
+/* Mobil */
+
+#mobil_sprite {
+	position: absolute;
+	width: 6.51vw;
+	height: 3.90vw;
+	background-image: url(images/mobil.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+
+}
+
+
+/*mobil ryger frem (contaioner)*/
+
+.mobil_ryger_frem {
+	animation-name: mobil_ryger_frem_kf;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes mobil_ryger_frem_kf {
+	0% {
+		top: 30vw;
+		left: 31vw;
+		z-index: 0;
+		transform: rotate(-90deg);
+	}
+	100% {
+		top: 28vw;
+		left: 32vw;
+		z-index: 25;
+		transform: rotate(-75deg);
+	}
+
+	25% {
+		top: 28vw;
+		left: 34vw;
+		z-index: 25;
+		transform: rotate(-45deg);
+	}
+	50% {
+		top: 30vw;
+		left: 36vw;
+		z-index: 50;
+		transform: rotate(-45deg);
+	}
+
+	70% {
+		top: 32vw;
+		left: 37vw;
+		z-index: 50;
+		transform: rotate(-20deg);
+	}
+	85% {
+		top: 33vw;
+		left: 37vw;
+		z-index: 50;
+		transform: rotate(-20deg);
+	}
+	90% {
+		top: 34vw;
+		left: 39vw;
+		z-index: 50;
+		transform: rotate(0deg);
+	}
+	95% {
+		top: 33.5vw;
+		left: 39vw;
+		z-index: 50;
+		transform: rotate(-20deg);
+	}
+
+	100% {
+		top: 34vw;
+		left: 39.5vw;
+		z-index: 50;
+		transform: rotate(0deg);
+	}
+}
+
+/* - - - - - - - scene: mobilRyster - - - - - - - - */
+
+.mobil_ryster_possition {
+	top: 34vw;
+	left: 39.5vw;
+	z-index: 100;
+	transform: rotate(0deg);
+}
+
+
+.mobil_ryster {
+	top: 34vw;
+	left: 39.5vw;
+	z-index: 50;
+	animation-name: mobil_ryster_kf;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes mobil_ryster_kf {
+	0% {
+		transform: rotate(0deg);
+	}
+	5% {
+		transform: rotate(10deg);
+	}
+	10% {
+		transform: rotate(-15deg);
+	}
+	15% {
+		transform: rotate(10deg);
+	}
+	20% {
+		transform: rotate(-15deg);
+	}
+	25% {
+		transform: rotate(20deg);
+	}
+	30% {
+		transform: rotate(-10deg);
+	}
+	35% {
+		transform: rotate(10deg);
+	}
+	40% {
+		transform: rotate(12deg);
+	}
+	45% {
+		transform: rotate(-10deg);
+	}
+	50% {
+		transform: rotate(3deg);
+	}
+	55% {
+		transform: rotate(0deg);
+	}
+	60% {
+		transform: rotate(10deg);
+	}
+	65% {
+		transform: rotate(-15deg);
+	}
+	70% {
+		transform: rotate(10deg);
+	}
+	74% {
+		transform: rotate(-15deg);
+	}
+	78% {
+		transform: rotate(20deg);
+	}
+	82% {
+		transform: rotate(-10deg);
+	}
+	86% {
+		transform: rotate(10deg);
+	}
+	88% {
+		transform: rotate(12deg);
+	}
+	92% {
+		transform: rotate(-10deg);
+	}
+	95% {
+		transform: rotate(2deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+.mobil_ryster_2 {
+	top: 34vw;
+	left: 39.5vw;
+	z-index: 50;
+	animation-name: mobil_ryster_2_kf;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes mobil_ryster_2_kf {
+	0% {
+		transform: rotate(0);
+		z-index: 50;
+	}
+	5% {
+		transform: rotate(10deg);
+		z-index: 50;
+	}
+	10% {
+		transform: rotate(-15deg);
+		z-index: 50;
+	}
+	15% {
+		transform: rotate(10deg);
+		z-index: 50;
+	}
+	20% {
+		transform: rotate(-15deg);
+		z-index: 50;
+	}
+	25% {
+		transform: rotate(20deg);
+		z-index: 50;
+	}
+	30% {
+		transform: rotate(-10deg);
+		z-index: 50;
+	}
+	35% {
+		transform: rotate(10deg);
+		z-index: 50;
+	}
+	40% {
+		transform: rotate(12deg);
+		z-index: 50;
+	}
+	45% {
+		transform: rotate(-10deg);
+		z-index: 50;
+	}
+	50% {
+		transform: rotate(3deg);
+		z-index: 50;
+	}
+	55% {
+		transform: rotate(-1deg);
+		z-index: 50;
+	}
+	60% {
+		transform: rotate(10deg);
+		z-index: 50;
+	}
+	65% {
+		transform: rotate(-15deg);
+		z-index: 50;
+	}
+	70% {
+		transform: rotate(10deg);
+		z-index: 50;
+	}
+	74% {
+		transform: rotate(-15deg);
+		z-index: 50;
+	}
+	78% {
+		transform: rotate(20deg);
+		z-index: 50;
+	}
+	82% {
+		transform: rotate(-10deg);
+		z-index: 50;
+	}
+	86% {
+		transform: rotate(10deg);
+		z-index: 50;
+	}
+	88% {
+		transform: rotate(12deg);
+		z-index: 50;
+	}
+	92% {
+		transform: rotate(-10deg);
+		z-index: 50;
+	}
+	95% {
+		transform: rotate(-1deg);
+		z-index: 50;
+	}
+	100% {
+		transform: rotate(0deg);
+		z-index: 100;
+	}
+}
+
+/* - - - - - - - scene: jaegerVaagen - - - - - - - - */
+
+/* jæger vågen (sprite) */
+
+.jaeger_vaagen {
+	animation-name: jaeger_vaagen_kf;
+	animation-duration: 2s;
+	animation-timing-function: steps(14);
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes jaeger_vaagen_kf {
+	0% {
+		background-position: 0 -300%;
+	}
+	100% {
+		background-position: -1400% -300%;
+	}
+}
+
+/* jæger gal frame (sprite) */
+
+.jaeger_vaagen_gal {
+	background-position: -1200% -300%;
+}
+
+.jaeger_vaagen_gal_2 {
+	background-position: -1200% -300%;
+}
+
+/* - - - - - - - scene: gameInfo - - - - - - - - */
+
+#game_info_skilt {
+	width: 57.81vw;
+	height: 39.06vw;
+	top: 3.77vw;
+	left: 20.31vw;
+	padding: 7vw 10vw;
+	background-image: url(images/taktikvalg_skilt.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 145;
+}
+
+
+.info_skilt_rubrik {
+	font-family: 'playbillregular';
+	font-size: 10vw;
+	text-transform: uppercase;
+	white-space: nowrap;
+	color: #42210b;
+	padding: 0;
+}
+
+.info_skilt_tekst {
+	font-family: 'arial_rounded_mt_boldbold';
+	font-size: 2.75vw;
+	color: #000;
+	padding-left: 1vw;
+}
+
+#info_skilt_tekst:hover {
+	color: #fff;
+	transition: color 0.75s;
+}
+
+#info_countdown_container {
+	position: absolute;
+	width: 10vw;
+	height: 10vw;
+	top: 25vw;
+	left: 25vw;
+	z-index: 500;
+}
+
+#info_countdown_sprite {
+	position: absolute;
+	width: 10vw;
+	height: 10vw;
+	top: 0;
+	left: 0;
+	background-image: url(images/info_skilt_countdown.svg);
+	background-size: 400% 100%;
+}
+
+.info_countdown_do {
+	animation-name: info_conutdown_do_kf;
+	animation-duration: 4s;
+	animation-timing-function: steps(4);
+	animation-iteration-count: 1;
+}
+
+@keyframes info_conutdown_do_kf {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: -400% 0;
+	}
+}
+
+/* - - - - - - - SPIL STYLES - - - - - - -  */
+
+.kanin_game_possition {
+	top: 13vw;
+	left: 15vw;
+	z-index: 25;
+}
+
+.mobil_game_possition {
+	top: 36vw;
+	left: 36vw;
+	z-index: 25;
+}
+
+
+#kanin_drop {
+	position: absolute;
+	top: 5vw;
+	left: 8.5vw;
+	width: 9vw;
+	height: 23vw;
+	z-index: 25;
+	pointer-events: all;
+}
+
+.gulerod_wrapper_1 {
+	position: absolute;
+	top: 26.4vw;
+	left: 31vw;
+	width: 4.5vw;
+	height: 6vw;
+	overflow: hidden;
+	pointer-events: none;
+	z-index: 23;
+}
+
+.gulerod_wrapper_2 {
+	position: absolute;
+	top: 27.8vw;
+	left: 36.5vw;
+	width: 4.5vw;
+	height: 6vw;
+	overflow: hidden;
+	pointer-events: none;
+	z-index: 23;
+}
+
+.gulerod_wrapper_3 {
+	position: absolute;
+	top: 30.2vw;
+	left: 40.8vw;
+	width: 4.5vw;
+	height: 6vw;
+	overflow: hidden;
+	pointer-events: none;
+	z-index: 23;
+}
+
+.gulerod_wrapper_4 {
+	position: absolute;
+	top: 23.5vw;
+	left: 34.5vw;
+	width: 4.5vw;
+	height: 6vw;
+	overflow: hidden;
+	pointer-events: none;
+	z-index: 22;
+}
+
+.gulerod_wrapper_5 {
+	position: absolute;
+	top: 24.5vw;
+	left: 40vw;
+	width: 4.75vw;
+	height: 6vw;
+	overflow: hidden;
+	pointer-events: none;
+	z-index: 22;
+}
+
+.gulerod_wrapper_6 {
+	position: absolute;
+	top: 27vw;
+	left: 45vw;
+	width: 4.5vw;
+	height: 6vw;
+	overflow: hidden;
+	pointer-events: none;
+	z-index: 22;
+}
+
+.gulerod_wrapper_7 {
+	position: absolute;
+	top: 22.5vw;
+	left: 43.5vw;
+	width: 4.5vw;
+	height: 6vw;
+	overflow: hidden;
+	pointer-events: none;
+	z-index: 21;
+}
+
+.gulerod {
+	position: absolute;
+	top: 1vw;
+	left: 0.3vw;
+	width: 3.90vw;
+	height: 10.93vw;
+	z-index: 25;
+	pointer-events: all;
+}
+
+.gulerod_jord {
+	position: absolute;
+	bottom: -0.5vw;
+	width: 5vw;
+	height: 1.30vw;
+	z-index: 30;
+	pointer-events: none;
+	background-image: url(images/jord.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	pointer-events: none;
+}
+
+.gulerod_puls {
+	animation-name: gulerod_puls_kf;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes gulerod_puls_kf {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+
+	}
+}
+
+#timer_wrapper {
+	position: absolute;
+	top: 2vw;
+	left: 10vw;
+	width: 80vw;
+	height: 1vw;
+	border-color: #000;
+	border-style: solid;
+	border-width: 2px;
+	z-index: 150;
+}
+
+#timer_bar {
+	position: absolute;
+	top: 0vw;
+	left: 0vw;
+	width: 100%;
+	height: 100%;
+	background-color: #ff6700;
+}
+
+.timer_gaa_ned {
+	animation-name: timer_gaa_ned_kf;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+}
+
+@keyframes timer_gaa_ned_kf {
+	0% {
+		width: 100%;
+	}
+	100% {
+		width: 0%;
+	}
+}
+
+.timer_gaa_ned_paused {
+	animation-play-state: paused;
+}
+
+
+/* - - - - - - - scene: jaeger skyder - - - - - - - - */
+
+/* jæger skyder (sprite) */
+
+.jaeger_skyder {
+	animation-name: jaeger_skyder_kf;
+	animation-duration: 1.5s;
+	animation-timing-function: steps(14);
+	animation-iteration-count: 4;
+	animation-fill-mode: forwards;
+}
+
+@keyframes jaeger_skyder_kf {
+	0% {
+		background-position: 0 -500%;
+	}
+	100% {
+		background-position: -1400% -500%;
+	}
+}
+
+#censur_container {
+	position: absolute;
+	width: 15.62vw;
+	height: 13.02vw;
+}
+
+#censur_sprite {
+	position: absolute;
+	width: 15.62vw;
+	height: 13.02vw;
+	background-image: url(images/censur.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.censur_cover {
+
+	top: 24vw;
+	left: 23vw;
+	animation-name: censur_cover_kf;
+	animation-duration: 4s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+@keyframes censur_cover_kf {
+	0% {
+		top: 24vw;
+		left: 23vw;
+		z-index: 0;
+	}
+	1% {
+		top: 24vw;
+		left: 23vw;
+		z-index: 50;
+		transform: scale(1);
+	}
+	25% {
+		top: 24vw;
+		left: 23vw;
+		z-index: 50;
+		transform: scale(1.25) rotate(5deg);
+	}
+	75% {
+		top: 23vw;
+		left: 23vw;
+		z-index: 50;
+		transform: scale(1.35) rotate(-5deg);
+	}
+	100% {
+		top: 23vw;
+		left: 23vw;
+		z-index: 50;
+		transform: scale(1.45);
+	}
+}
+
+/* - - - - - - - scene: kanin vinder - - - - - - - - */
+
+/* kaninen drejer i luften imens (sprite) */
+
+.kanin_drej_i_luften_win {
+	animation-name: kanin_drej_i_luften_kf;
+	animation-duration: 1s;
+	animation-timing-function: steps(12);
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-direction: reverse;
+}
+
+@keyframes kanin_drej_i_luften_win_kf {
+	0% {
+		background-position: 0 -200%;
+	}
+	100% {
+		background-position: -1200% -200%;
+	}
+}
+
+/* kanin hhop glad- (sprite) */
+
+.kanin_hop_glad {
+	animation-name: kanin_hop_glad_kf;
+	animation-duration: 1s;
+	animation-timing-function: steps(12);
+	animation-iteration-count: 2;
+	animation-fill-mode: forwards;
+}
+
+@keyframes kanin_hop_glad_kf {
+	0% {
+		background-position: 0 -400%;
+	}
+	100% {
+		background-position: -1200% -400%;
+	}
+}
+
+/* kanin stilbillede - (sprite) */
+
+.kanin_glad {
+	background-position: 0 -400%;
+}
+
+/* jæger taber (sprite) */
+
+.jaeger_taber {
+	animation-name: jaeger_taber_kf;
+	animation-duration: 2s;
+	animation-timing-function: steps(10);
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes jaeger_taber_kf {
+	0% {
+		background-position: 0% -400%;
+	}
+	100% {
+		background-position: -1000% -400%;
+	}
+}
+
+/* jaeger_tabt - (sprite) */
+
+.jaeger_tabt {
+	background-position: -1000 -400%;
+}
+
+/* - - - - - - - scene: GameOver - - - - - - - - */
+
+#game_over_skilt {
+	width: 57.81vw;
+	height: 39.06vw;
+	top: 3.77vw;
+	left: 20.31vw;
+	padding: 7vw 10vw;
+	background-image: url(images/taktikvalg_skilt.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 145;
+}
+
+.game_over_rubrik {
+	font-family: 'playbillregular';
+	font-size: 10vw;
+	text-transform: uppercase;
+	white-space: nowrap;
+	color: #42210b;
+	padding: 0 0 1vw;
+}
+
+.game_over_wrapper {
+	display: flex;
+	margin: 0 0 2vw;
+}
+
+#game_over_knap {
+	min-width: 6.51vw;
+	height: 5.98vw;
+	background-image: url(images/game_over_knap.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+#game_over_knap:hover {
+	background-image: url(images/game_over_knap_hover.svg);
+	transition: background-image 0.75s;
+}
+
+
+.game_over_tekst {
+	font-family: 'arial_rounded_mt_boldbold';
+	font-size: 2.5vw;
+	color: #000;
+	padding: 1.5vw 0 0 1.5vw;
+}
+
+#game_over_tekst:hover {
+	color: #fff;
+	transition: color 0.75s;
+}
+
+/* - - - - - - - scene: GameWin - - - - - - - - */
+
+#game_win_skilt {
+	width: 57.81vw;
+	height: 39.06vw;
+	top: 3.77vw;
+	left: 20.31vw;
+	padding: 7vw 10vw;
+	background-image: url(images/taktikvalg_skilt.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 145;
+}
+
+.game_win_rubrik {
+	font-family: 'playbillregular';
+	font-size: 10vw;
+	text-transform: uppercase;
+	white-space: nowrap;
+	color: #42210b;
+	padding: 0 0 1vw;
+}
+
+.game_win_wrapper {
+	display: flex;
+	margin: 0 0 2vw;
+}
+
+#game_win_knap {
+	min-width: 6.51vw;
+	height: 5.98vw;
+	background-image: url(images/game_over_knap.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+#game_win_knap:hover {
+	background-image: url(images/game_over_knap_hover.svg);
+	transition: background-image 0.75s;
+}
+
+
+.game_win_tekst {
+	font-family: 'arial_rounded_mt_boldbold';
+	font-size: 2.5vw;
+	color: #000;
+	padding: 1.5vw 0 0 1.5vw;
+}
+
+#game_win_tekst:hover {
+	color: #fff;
+	transition: color 0.75s;
+}
+
+
+/* - - - - - - - scene: vundet let - - - - - - - - */
+
+#vundet_let_skilt {
+	width: 57.81vw;
+	height: 39.06vw;
+	top: 3.77vw;
+	left: 20.31vw;
+	padding: 7vw 10vw;
+	background-image: url(images/taktikvalg_skilt.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 145;
+}
+
+.vundet_let_rubrik {
+	font-family: 'playbillregular';
+	font-size: 10vw;
+	text-transform: uppercase;
+	white-space: nowrap;
+	color: #42210b;
+	padding: 0 0 0vw;
+	margin-bottom: -1.2vw;
+}
+
+.vundet_let_wrapper {
+	display: flex;
+	margin: 0 0 2vw;
+}
+
+#vundet_let_knap {
+	min-width: 6.51vw;
+	height: 5.98vw;
+	background-image: url(images/game_over_knap.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+#vundet_let_knap:hover {
+	background-image: url(images/game_over_knap_hover.svg);
+	transition: background-image 0.75s;
+}
+
+
+.vundet_let_tekst {
+	font-family: 'arial_rounded_mt_boldbold';
+	font-size: 2.5vw;
+	color: #000;
+	padding: 1.5vw 0 0 1.5vw;
+}
+
+#vundet_let_tekst:hover {
+	color: #fff;
+	transition: color 0.75s;
+}
+
+
+#blackout {
+	width: 100vw;
+	height: 56.25vw;
+	top: 0;
+	left: 0;
+	z-index: 150;
+	background-color: #000;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+
+#blackout_skilt {
+	width: 60vw;
+	height: 39.06vw;
+	top: 0;
+	left: 20.31vw;
+	padding: 7vw 10vw;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 145;
+}
+
+.blackout_rubrik {
+	font-family: 'playbillregular';
+	font-size: 10vw;
+	text-transform: uppercase;
+	white-space: nowrap;
+	color: #fff;
+	padding: 0 0 1vw;
+}
+
+.blackout_tekst {
+	font-family: 'arial_rounded_mt_boldbold';
+	font-size: 2.5vw;
+	color: #fff;
+	padding: 1.5vw 0 0 1.5vw;
+}
+
+.fade_to_black {
+	animation-name: fade_to_black_kf;
+	animation-duration: 8s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fade_to_black_kf {
+	0% {
+		background-color: transparent;
+	}
+	30% {
+		background-color: #000;
+	}
+	100% {
+		background-color: #000;
+	}
+}

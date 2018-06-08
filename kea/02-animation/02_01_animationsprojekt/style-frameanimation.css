@@ -1,0 +1,23 @@
+#frame-kanin {
+	position: absolute;
+	width: 20vw;
+	height: 44vw;
+	background-image: url(images/kanin-til-frames.svg);
+	background-size: 1200% 100%;
+}
+
+.animate-hop {
+	animation-name: hop;
+	animation-duration: 1.5s;
+	animation-timing-function: steps(12);
+	animation-iteration-count: infinite;
+}
+
+@keyframes hop {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 1200% 0%;
+	}
+}

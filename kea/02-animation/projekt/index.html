@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Animation/spil om en sulten kanin og en fuld jæger">
+	<title>Animation - Kaninen og jægeren</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="skjuloverflow">
+	<div id="scene">
+		<div id="start_skilt">
+			<div id="start_knap"></div>
+		</div>
+		<div id="nedtoning"></div>
+		<div id="baggrund_buske"></div>
+
+		<div id="kanin_container">
+			<div id="kanin_sprite">
+				<div id="kanin_drop" ondrop="drop(event, this)" ondragover="allowDrop(event)"></div>
+			</div>
+		</div>
+
+		<div id="sten"></div>
+		<div id="baggrund_trae"></div>
+		<div id="jaeger_container">
+			<div id="jaeger_sprite">
+			</div>
+		</div>
+		<div id="baggrund_mark"></div>
+		<div id="roeg"></div>
+		<div id="roeg_2"></div>
+		<div id="baggrund_bjerge"></div>
+		<div id="mobil_container">
+			<div id="mobil_sprite"></div>
+		</div>
+		<div id="censur_container">
+			<div id="censur_sprite"></div>
+		</div>
+		<div id="vindue_container">
+			<div id="vindue_sprite"></div>
+		</div>
+		<div id="taktikvalg_skilt">
+			<div class="taktikvalg_rubrik">Snup gulerødderne...</div>
+			<div class="taktikvalg_wrapper">
+				<div id="taktikvalg_knap_a"></div>
+				<div id="taktikvalg_tekst_a" class="taktikvalg_tekst">Skal kaninen snige sig hen til gulerødderne på marken?</div>
+			</div>
+			<div class="taktikvalg_wrapper">
+				<div id="taktikvalg_knap_b"></div>
+				<div id="taktikvalg_tekst_b" class="taktikvalg_tekst">Eller skal den først prøve <br>at slå jægeren ud med en hemlig kung-fu teknik?
+				</div>
+			</div>
+		</div>
+		<div id="game_info_skilt">
+			<div class="info_skilt_rubrik">Hurtigt!</div>
+			<div class="taktikvalg_wrapper">
+				<div class="info_skilt_tekst">Træk gulerødderne hen på kaninen, mens tid er!<br><br>Begynd om:</div>
+			</div>
+			<div id="info_countdown_container">
+				<div id="info_countdown_sprite"></div>
+			</div>
+		</div>
+
+		<div id="game_over_skilt">
+			<div class="game_over_rubrik">Game over</div>
+			<div class="game_over_wrapper">
+				<div id="game_over_knap"></div>
+				<div id="game_over_tekst" class="game_over_tekst">Prøv igen?</div>
+			</div>
+		</div>
+
+		<div id="vundet_let_skilt">
+			<div class="vundet_let_rubrik">win!</div>
+			<div class="vundet_let_wrapper">
+
+				<div class="vundet_let_tekst">Jægeren sover, og kaninen kan tage gulerøddene...</div>
+			</div>
+			<div class="vundet_let_wrapper">
+				<div id="vundet_let_knap"></div>
+				<div id="vundet_let_tekst" class="vundet_let_tekst">Prøv igen?</div>
+			</div>
+		</div>
+
+		<div id="game_win_skilt">
+			<div class="game_win_rubrik">Du vinder!</div>
+			<div class="game_win_wrapper">
+				<div id="game_win_knap"></div>
+				<div id="game_win_tekst" class="game_win_tekst">Prøv igen?</div>
+			</div>
+		</div>
+
+		<div id="blackout">
+			<div id="blackout_skilt">
+				<div class="blackout_rubrik">Øv!!!</div>
+				<div class="blackout_wrapper">
+					<div class="blackout_tekst"> - Det kommer ikke til at gå godt for kaninen...<br><br>Af hensyn til børn og sarte sjæle, kan vi desværre ikke forsvare at vise billeder af dette... </div>
+				</div>>
+			</div>
+		</div>
+
+		<div class="gulerod_wrapper_1">
+			<div class="gulerod_jord"></div>
+			<img id="drag1" class="gulerod" src="images/gulerod_1.svg" draggable="true" ondragstart="drag(event)">
+		</div>
+
+		<div class="gulerod_wrapper_2">
+			<div class="gulerod_jord"></div>
+			<img id="drag2" class="gulerod" src="images/gulerod_2.svg" draggable="true" ondragstart="drag(event)">
+		</div>
+
+		<div class="gulerod_wrapper_3">
+			<div class="gulerod_jord"></div>
+			<img id="drag3" class="gulerod" src="images/gulerod_3.svg" draggable="true" ondragstart="drag(event)">
+		</div>
+
+		<div class="gulerod_wrapper_4">
+			<div class="gulerod_jord"></div>
+			<img id="drag4" class="gulerod" src="images/gulerod_4.svg" draggable="true" ondragstart="drag(event)">
+		</div>
+
+		<div class="gulerod_wrapper_5">
+			<div class="gulerod_jord"></div>
+			<img id="drag5" class="gulerod" src="images/gulerod_5.svg" draggable="true" ondragstart="drag(event)">
+		</div>
+
+		<div class="gulerod_wrapper_6">
+			<div class="gulerod_jord"></div>
+			<img id="drag6" class="gulerod" src="images/gulerod_6.svg" draggable="true" ondragstart="drag(event)">
+		</div>
+
+		<div class="gulerod_wrapper_7">
+			<div class="gulerod_jord"></div>
+			<img id="drag7" class="gulerod" src="images/gulerod_7.svg" draggable="true" ondragstart="drag(event)">
+		</div>
+
+		<div id="timer_wrapper">
+			<div id="timer_bar"></div>
+		</div>
+
+	</div>
+
+	<audio id="musik_gunfight" src="lyde/the_gunfight.mp3" autoplay></audio>
+	<audio id="musik_crust" src="lyde/earthy_crust.mp3"></audio>
+	<audio id="effekt_kaninhop" src="lyde/kaninhop.mp3"></audio>
+	<audio id="effekt_kaninhop_1" src="lyde/kaninhop.mp3"></audio>
+	<audio id="effekt_kaninhop_2" src="lyde/kaninhop.mp3"></audio>
+	<audio id="effekt_kaninhop_3" src="lyde/kaninhop.mp3"></audio>
+	<audio id="effekt_kaninhop_4" src="lyde/kaninhop.mp3"></audio>
+	<audio id="effekt_kaninhop_5" src="lyde/kaninhop.mp3"></audio>
+	<audio id="effekt_kaninhop_6" src="lyde/kaninhop.mp3"></audio>
+	<audio id="effekt_kaninhop_to_gange" src="lyde/kaninhop_to_gange.mp3"></audio>
+	<audio id="effekt_lillemoegdyr" src="lyde/lillemoegdyr.mp3"></audio>
+	<audio id="effekt_mobilbrummen_1" src="lyde/mobilbrummen.mp3"></audio>
+	<audio id="effekt_mobilbrummen_2" src="lyde/mobilbrummen.mp3"></audio>
+	<audio id="effekt_mobilbrummen_3" src="lyde/mobilbrummen.mp3"></audio>
+	<audio id="effekt_mobilbrummen_4" src="lyde/mobilbrummen.mp3"></audio>
+	<audio id="effekt_mobilringer" src="lyde/mobilringer.mp3"></audio>
+	<audio id="effekt_slurk_tre_gange" src="lyde/slurk_tre_gange.mp3"></audio>
+	<audio id="effekt_snorken" src="lyde/snorken.mp3"></audio>
+	<audio id="effekt_swup" src="lyde/swup.mp3"></audio>
+	<audio id="effekt_bank" src="lyde/bank.mp3"></audio>
+	<audio id="effekt_skud" src="lyde/skud.mp3"></audio>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="kj_script.js"></script>
+</body>
+
+</html>

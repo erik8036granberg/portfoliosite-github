@@ -1,0 +1,279 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.skjuloverflow {
+	overflow: hidden;
+}
+
+.wrapper {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.wrapper img {
+	max-width: 720px;
+}
+
+h3 {
+	margin-bottom: 0;
+}
+
+
+#scene {
+	width: 100vw;
+	height: 56.25vw;
+	position: relative;
+	overflow: hidden;
+}
+
+#baggrund-buske {
+	width: 100vw;
+	height: 56.25vw;
+	background-image: url(images/baggrund-buske.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 40;
+}
+
+#baggrund-trae {
+	width: 100vw;
+	height: 56.25vw;
+	background-image: url(images/baggrund-trae.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 30;
+}
+
+#baggrund-mark {
+	width: 100vw;
+	height: 56.25vw;
+	background-image: url(images/baggrund-mark.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 20;
+}
+
+#baggrund-bjerge {
+	width: 100vw;
+	height: 56.25vw;
+	background-image: url(images/baggrund-bjerge.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+#roeg {
+	width: 32.29vw;
+	height: 9.21vw;
+	background-image: url(images/roeg.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: -1vw;
+	left: 72vw;
+	z-index: 10;
+	animation-name: boelge;
+	transform-origin: bottom left;
+	animation-duration: 25s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	opacity: 0;
+}
+
+#roeg-2 {
+	width: 32.29vw;
+	height: 9.21vw;
+	background-image: url(images/roeg-2.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: -1vw;
+	left: 72vw;
+	z-index: 10;
+	animation-name: boelge-2;
+	transform-origin: bottom left;
+	animation-duration: 25s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	opacity: 0;
+}
+
+#kanin {
+	width: 8.59vw;
+	height: 22.39vw;
+	background-image: url(images/kanin.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 22vw;
+	left: -15vw;
+	z-index: 35;
+	animation-name: kanin-hop-ind;
+	animation-duration: 7s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+}
+
+#jaeger {
+	width: 16.92vw;
+	height: 17.70vw;
+	background-image: url(images/jaeger.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: -20vw;
+	left: 75.10vw;
+	z-index: 35;
+	animation-name: jaeger-fald-ned;
+	animation-duration: 7s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+}
+
+@keyframes boelge {
+	0% {
+		opacity: 0;
+		transform: rotate(0deg) scaleX(1)
+	}
+
+	25% {
+		opacity: 0.7;
+		transform: rotate(-8deg) scaleX(1.2)
+	}
+	50% {
+		opacity: 0.5;
+		transform: rotate(0deg) scaleX(1.5)
+	}
+	75% {
+		opacity: 0.5;
+		transform: rotate(-2deg) scaleX(1.7)
+	}
+	85% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 0;
+		transform: rotate(0deg) scaleX(2)
+	}
+}
+
+@keyframes boelge-2 {
+	0% {
+		opacity: 0;
+		transform: rotate(0deg) scaleX(1)
+	}
+	15% {
+		opacity: 1;
+	}
+
+	25% {
+		opacity: 1;
+		transform: rotate(-3deg) scaleX(1.5)
+	}
+	50% {
+		opacity: 1;
+		transform: rotate(0deg) scaleX(2)
+	}
+	75% {
+		opacity: 1;
+		transform: rotate(0deg) scaleX(2.5)
+	}
+	85% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: rotate(0deg) scaleX(3)
+	}
+}
+
+@keyframes kanin-hop-ind {
+	0% {
+		transform: translateX(0vw) translateY(0vw)
+	}
+
+	22% {
+		transform: translateX(0vw) translateY(0vw)
+	}
+
+	25% {
+		transform: translateX(17vw) translateY(-10vw)
+	}
+
+	30% {
+		transform: translateX(19vw) translateY(0vw)
+	}
+	35% {
+		transform: translateX(21vw) translateY(-3vw)
+	}
+
+	40% {
+		transform: translateX(23vw) translateY(0vw)
+	}
+	42% {
+		transform: translateX(24vw) translateY(-1vw)
+	}
+	45% {
+		transform: translateX(25vw) translateY(0vw)
+	}
+	100% {
+		transform: translateX(25vw) translateY(0vw)
+	}
+
+}
+
+@keyframes jaeger-fald-ned {
+	0% {
+		transform: translateY(0vw)
+	}
+	60% {
+		transform: translateY(0vw)
+	}
+	63% {
+		transform: translateY(40vw)
+	}
+	66% {
+		transform: translateY(38vw)
+	}
+	68% {
+		transform: translateY(40vw)
+	}
+	68.1% {
+		transform: translateY(40vw) rotate(0deg)
+	}
+	72% {
+		transform: translateY(40vw) rotate(10deg)
+	}
+	74% {
+		transform: translateY(40vw) rotate(-8deg)
+	}
+	76% {
+		transform: translateY(40vw) rotate(3deg)
+	}
+	78% {
+		transform: translateY(40vw) rotate(-3deg)
+	}
+	79% {
+		transform: translateY(40vw) rotate(0deg)
+	}
+	100% {
+		transform: translateY(40vw) rotate(0deg)
+	}
+}
