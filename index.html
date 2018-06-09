@@ -18,12 +18,16 @@
 		</header>
 	</div>
 	<nav class="wrapper">
-		<ul>
-			<li class="nav_home"><a href="index.html">Forside</a></li>
-			<li class="nav_portfolio"><a href="portfolio.html">portfolio</a></li>
-			<li class="nav_cv"><a href="cv.html">cv</a></li>
-			<li class="nav_back"><a href="#" onclick="window.history.go(-1)">Tilbage</a></li>
-		</ul>
+		<div class="dropdown">
+			<div class="menu_symbol"><img class="menuknap" src="images/menu_symbol.svg" alt="Menu"></div>
+			<div class="dropdown-content">
+				<ul>
+					<li class="menulink"><a href="#">Forside</a></li>
+					<li class="menulink"><a href="#">Portfolio</a></li>
+					<li class="menulink"><a href="#">CV</a></li>
+				</ul>
+			</div>
+		</div>
 	</nav>
 
 	<main>
@@ -61,6 +65,7 @@
 			<p>Portfolio-site / <span class="nobreak">erik granberg</span> / <span class="nobreak">MMD-F2018</span> / <span class="nobreak">1-semester</span></p>
 		</footer>
 	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<script src="script.js"></script>
 </body>
 

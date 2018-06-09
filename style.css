@@ -149,13 +149,98 @@ header h2 {
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	margin: 0;
-	padding: 0 0 0;
+	padding: 0;
 }
 
 header .row_icon {
 	display: none;
 }
 
+/* nav */
+
+nav {
+	text-transform: uppercase;
+	font-size: 1.1rem;
+	font-weight: bold;
+	transition: 1s;
+}
+
+nav ul {
+	white-space: nowrap;
+	padding-left: 0;
+	text-align: left;
+	line-height: 3em;
+}
+
+nav li {
+	list-style-type: none;
+}
+
+nav a:link {
+	color: #3b759f;
+	text-decoration: none;
+}
+
+nav a:visited {
+	color: #3b759f;
+}
+
+nav a:hover {
+	color: #adcfd9;
+}
+
+nav a:active {
+	color: #3b759f;
+}
+
+nav .dropdown {
+	position: relative;
+	display: inline-block;
+	text-align: left;
+}
+
+nav .menu_symbol {
+	width: 1.75rem;
+	height: auto;
+	max-width: 1.75rem;
+	display: inline-block;
+	margin: 0.3em 0 0;
+}
+
+nav .menu_symbol img {
+	width: 1.75rem;
+	height: auto;
+}
+
+nav .menu_symbol:hover {
+	opacity: 0.4;
+}
+
+nav .dropdown-content {
+	max-height: 0;
+	height: auto;
+	position: relative;
+	z-index: 1;
+	text-align: right;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+nav .expanded {
+	max-height: 15rem;
+}
+
+nav .nav_bg {
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+nav .nav-up {
+	top: -20rem;
+}
+
+/* - - - - - nav uden js - - - - - */
+
+/*
 nav .row_icon {
 	display: none;
 }
@@ -238,6 +323,7 @@ nav li.nav_back:hover {
 	padding-left: 1.75em;
 	height: 1.4em;
 }
+*/
 
 .nobreak {
 	white-space: nowrap;
@@ -462,14 +548,6 @@ footer p {
 		padding: 0 0 1em;
 	}
 
-	nav ul {
-		flex-direction: row;
-	}
-
-	nav li {
-		font-size: 1em;
-	}
-
 	.column {
 		flex-grow: 1;
 		flex-basis: 20em;
@@ -522,12 +600,38 @@ footer p {
 		width: 3em;
 		display: block;
 	}
-	nav .row_icon {
-		position: absolute;
-		top: 1em;
-		left: 1em;
-		width: 3em;
+
+	nav .menu_symbol {
+		display: none;
+	}
+
+	nav .dropdown {
 		display: block;
+		width: 100%;
+	}
+
+	nav .dropdown-content {
+		max-height: 30rem;
+		text-align: left;
+		display: block;
+		width: auto;
+	}
+
+	nav {
+		font-size: 1rem;
+		padding: 0.5rem 1.5rem 1rem;
+		justify-content: flex-start;
+		text-align: left;
+	}
+
+	nav ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+
+	nav ul li {
+		margin-right: 1.5rem;
 	}
 
 	header h1 {
@@ -537,20 +641,6 @@ footer p {
 	header h2 {
 		font-size: 1em;
 		padding: 0 0 1.5em;
-	}
-
-	nav ul {
-		flex-direction: row;
-	}
-
-	nav ul {
-		list-style-type: none;
-		padding: 0;
-		margin: 0.75em 0 0;
-	}
-
-	nav li {
-		font-size: 1em;
 	}
 
 	.column {
