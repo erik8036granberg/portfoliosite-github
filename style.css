@@ -481,7 +481,7 @@ main .lydinfo {
 }
 
 .cv_foto {
-	max-width: 12em;
+	max-width: 75%;
 }
 
 .item_wrapper {
@@ -605,6 +605,10 @@ footer p {
 	.item:last-child {
 		max-width: 50%;
 	}
+
+	.cv_foto {
+		max-width: 50%;
+	}
 }
 
 /* ===== == = === 48em (768px) === = == ===== */
@@ -721,6 +725,9 @@ footer p {
 		max-width: 50%;
 	}
 
+	.cv_foto {
+		max-width: 12em;
+	}
 }
 
 /* ===== == = === 64em (1080px) === = == ===== */
@@ -757,6 +764,10 @@ footer p {
 
 	main .lydinfo {
 		display: inline-block;
+	}
+
+	.cv_foto {
+		max-width: 12em;
 	}
 }
 
