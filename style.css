@@ -85,6 +85,14 @@ a:visited {
 	color: #222;
 }
 
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
 .wrapper {
 	width: 100%;
 	margin: 0 auto;
@@ -470,6 +478,10 @@ main .lydinfo {
 	font-style: italic;
 	margin: 0;
 	max-width: 25em;
+}
+
+.cv_foto {
+	max-width: 12em;
 }
 
 .item_wrapper {
