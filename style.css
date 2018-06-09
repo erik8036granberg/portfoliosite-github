@@ -289,84 +289,14 @@ nav .nav-up {
 	top: -20rem;
 }
 
-/* - - - - - nav uden js - - - - - */
+/* - - - - - backknap? - - - - - */
 
 /*
-nav .row_icon {
-	display: none;
-}
-
-nav ul {
-	display: inline-flex;
-	justify-content: flex-start;
-	flex-direction: column;
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-}
-
-nav li {
-	font-family: 'Open Sans', sans-serif;
-	flex-wrap: wrap;
-	margin: 0 2em 1em 0;
-	font-size: 0.9em;
-	text-transform: uppercase;
-}
-
-nav li.nav_home {
-	background: url('images/nav_home.svg') no-repeat left top;
-	padding-left: 1.75em;
-	height: 1.4em;
-}
-
-nav li.nav_cv {
-	background: url('images/nav_cv.svg') no-repeat left top;
-	padding-left: 1.75em;
-	height: 1.4em;
-}
-
-nav li.nav_portfolio {
-	background: url('images/nav_portfolio.svg') no-repeat left top;
-	padding-left: 1.75em;
-	height: 1.4em;
-}
 
 nav li.nav_back {
 	background: url('images/nav_back.svg') no-repeat left top;
 	padding-left: 1.75em;
 	height: 1.4em;
-}
-
-nav a {
-	text-decoration: none;
-	color: #000;
-	font-weight: normal;
-}
-
-nav a:hover {
-	color: #a2c037;
-	transition: 0.5s;
-}
-
-nav li.nav_home:hover {
-	color: #a2c037;
-	background: url('images/nav_home_hover.svg') no-repeat left top;
-	padding-left: 1.75em;
-	transition: 0.5s;
-}
-
-nav li.nav_cv:hover {
-	color: #a2c037;
-	background: url('images/nav_cv_hover.svg') no-repeat left top;
-	padding-left: 1.75em;
-	transition: 0.5s;
-}
-
-nav li.nav_portfolio:hover {
-	color: #a2c037;
-	background: url('images/nav_portfolio_hover.svg') no-repeat left top;
-	padding-left: 1.75em;
-	transition: 0.5s;
 }
 
 nav li.nav_back:hover {
@@ -508,6 +438,38 @@ main .lydinfo {
 	flex-grow: 1;
 	flex-basis: auto;
 	padding: 0 0 2em 0;
+}
+
+.column_wide_cv {
+	flex-grow: 3;
+	flex-basis: 35em;
+	padding: 0 0 2em 0;
+}
+
+.column_narrow_cv {
+	flex-grow: 1;
+	flex-basis: 10em;
+	padding: 0 0 2em 0;
+}
+
+.cv_aar {
+	margin: 0;
+	margin: 1.75em 0 0;
+}
+
+.cv_titel {
+	font-weight: bold;
+	margin: 0;
+}
+
+.cv_hvor {
+	margin: 0;
+}
+
+.cv_hvad {
+	font-style: italic;
+	margin: 0;
+	max-width: 25em;
 }
 
 .item_wrapper {
