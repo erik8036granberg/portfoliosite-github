@@ -548,6 +548,20 @@ iframe {
 	border: 0;
 }
 
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+figcaption {
+	padding: 0;
+	font-weight: normal;
+}
+
+.item figcaption {
+	padding: 0.5em 0 0;
+}
+
 /**----------- Media queries ------------------**/
 
 /* ===== == = === 30em (480px) === = == ===== */
