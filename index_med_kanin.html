@@ -10,7 +10,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 
-<body>
+<body onload="kaninHopperInd()">
 	<div class="theme_green">
 		<header class="wrapper theme_green">
 			<h1>Portfolio</h1>
@@ -41,7 +41,7 @@
 			</div>
 		</div>
 
-		<div class="row">
+		<div class="row" id="scene">
 			<div class="wrapper">
 				<div class="column_wrapper">
 					<div class="column_wide forsidetekst">
@@ -52,6 +52,10 @@
 					</div>
 				</div>
 			</div>
+			<div id="kanin_container">
+				<div id="kanin_sprite"></div>
+			</div>
+		</div>
 		</div>
 	</main>
 
@@ -60,6 +64,9 @@
 			<p>Portfolio-site / <span class="nobreak">erik granberg</span> / <span class="nobreak">MMD-F2018</span> / <span class="nobreak">1-semester</span></p>
 		</footer>
 	</div>
+
+	<audio id="effekt_kaninhop" src="lyde/kaninhop.mp3"></audio>
+
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<script src="script.js"></script>
 </body>

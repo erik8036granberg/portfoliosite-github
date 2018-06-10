@@ -21,6 +21,7 @@ body {
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
+
 }
 
 @font-face {
@@ -382,12 +383,6 @@ main .opgave {
 	font-weight: bold;
 }
 
-/*
-main .pdf_link {
-	max-width: auto;
-}
-*/
-
 main a img:hover {
 	opacity: 0.5;
 }
@@ -571,6 +566,42 @@ figcaption a {
 
 .item figcaption {
 	padding: 0.5em 0 0;
+}
+
+.forsidetekst {
+	max-width: 48em;
+}
+
+#scene {
+	position: relative;
+	overflow: hidden;
+	background-color: red;
+}
+
+#kanin_container {
+	position: absolute;
+	width: 15em;
+	height: 16.49em;
+	pointer-events: none;
+}
+
+/* kanin sprite */
+
+#kanin_sprite {
+	width: 15em;
+	height: 16.49em;
+	background-image: url(images/forside_kaninspritesheet.svg);
+	background-size: 1200% 800%;
+	pointer-events: none;
+
+}
+
+/* kanin ind (container) */
+
+.kanin_ind_fra_siden {
+	bottom: -2em;
+	left: 0;
+	z-index: 35;
 }
 
 /**----------- Media queries ------------------**/
