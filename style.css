@@ -501,6 +501,7 @@ main .lydinfo {
 	flex-basis: 20em;
 	flex-grow: 1;
 	padding: 2em 1em 1em 0;
+	max-width: 100%;
 }
 
 .imagewrapper {
@@ -631,11 +632,15 @@ figcaption a {
 		padding: 0 2em 2em 0;
 	}
 
-	.item:last-child {
+	.item {
 		max-width: 50%;
 	}
 
 	.cv_foto {
+		max-width: 50%;
+	}
+
+	.item {
 		max-width: 50%;
 	}
 }
@@ -750,7 +755,7 @@ figcaption a {
 		padding: 0 2em 2em 0;
 	}
 
-	.item:last-child {
+	.item {
 		max-width: 50%;
 	}
 
@@ -798,6 +803,10 @@ figcaption a {
 	.cv_foto {
 		max-width: 12em;
 	}
+
+	.item {
+		max-width: 50%;
+	}
 }
 
 
@@ -837,7 +846,7 @@ figcaption a {
 		display: inline-block;
 	}
 
-	.item:last-child {
+	.item {
 		max-width: 33.333%;
 	}
 
