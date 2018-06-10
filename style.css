@@ -575,14 +575,12 @@ figcaption a {
 #scene {
 	position: relative;
 	overflow: hidden;
-	background-color: red;
 }
 
 #kanin_container {
 	position: absolute;
 	width: 15em;
 	height: 16.49em;
-	pointer-events: none;
 }
 
 /* kanin sprite */
@@ -592,8 +590,6 @@ figcaption a {
 	height: 16.49em;
 	background-image: url(images/forside_kaninspritesheet.svg);
 	background-size: 1200% 800%;
-	pointer-events: none;
-
 }
 
 /* kanin ind (container) */
@@ -602,6 +598,73 @@ figcaption a {
 	bottom: -2em;
 	left: 0;
 	z-index: 35;
+	animation-name: kanin_ind_fra_siden_kf;
+	animation-duration: 4s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+}
+
+@keyframes kanin_ind_fra_siden_kf {
+	0% {
+		left: -10em;
+	}
+	20% {
+		left: -5em;
+	}
+	25% {
+		left: -5em;
+	}
+	45% {
+		left: 0em;
+	}
+	50% {
+		left: 0em;
+	}
+	75% {
+		left: 5em;
+	}
+	80% {
+		left: 5em;
+	}
+	95% {
+		left: 10em;
+	}
+	100% {
+		left: 10em;
+	}
+}
+
+/* kanin hopper ind - (sprite) */
+
+.kanin_hop_fremad {
+	animation-name: kanin_hop_fremad_kf;
+	animation-duration: 1s;
+	animation-timing-function: steps(12);
+	animation-iteration-count: 4;
+	animation-fill-mode: forwards;
+}
+
+@keyframes kanin_hop_fremad_kf {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: -1200% 0;
+	}
+}
+
+/* kanin position (container) */
+
+.kanin_inde {
+	bottom: -2em;
+	left: 10em;
+}
+
+/* kanin stilbillede - (sprite) */
+
+.kanin_staar {
+	background-position: 0 0;
 }
 
 /**----------- Media queries ------------------**/
