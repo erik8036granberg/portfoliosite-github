@@ -53,17 +53,29 @@ function kaninStaar() {
 
 	$("#kanin_container").off("animationend", kaninStaar);
 	// - - -
-	// Snorken skrues ned
+	// stop lyd
 	$("#effekt_kaninhop")[0].pause();
 
-	// Start kanin move: kanin_ind-fra-siden
+	// stop kanin move: kanin_ind-fra-siden
 	$("#kanin_container").removeClass("kanin_ind_fra_siden");
 	$("#kanin_container").addClass("kanin_inde");
 
-	// Start kanin-animation: kanin_hop_fremad
+	// stop kanin-animation: kanin_hop_fremad
 	$("#kanin_sprite").removeClass("kanin_hop_fremad");
-	$("#kanin_sprite").removeClass("kanin_staar");
+	$("#kanin_sprite").addClass("kanin_staar");
 
 	//
-	//	$("#kanin_container").on("animationend", kaninStaar);
+	$("#kanin_sprite").on("click", kaninNed);
+}
+
+// - - - - - kanin_står- - - - -
+
+function kaninNed() {
+	console.log("kaninNed");
+
+	$("#kanin_sprite").off("click", kaninNed);
+
+	// Start kanin ned
+	$("#kanin_container").removeClass("kanin_inde");
+	$("#kanin_container").addClass("kanin_ned");
 }
