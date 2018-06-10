@@ -544,6 +544,10 @@ footer p {
 	height: 100% !important;
 }
 
+iframe {
+	border: 0;
+}
+
 /**----------- Media queries ------------------**/
 
 /* ===== == = === 30em (480px) === = == ===== */
@@ -806,6 +810,10 @@ footer p {
 
 	main .lydinfo {
 		display: inline-block;
+	}
+
+	.item:last-child {
+		max-width: 33.333%;
 	}
 
 }
